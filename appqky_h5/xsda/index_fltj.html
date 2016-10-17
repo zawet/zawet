@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>学生档案_主页</title>
+<!--框架css-->
+<link  href="css/animate.css" rel="stylesheet" type="text/css"/><!--css3 动画库-->
+<link href="css/common_h5.css" rel="stylesheet" type="text/css"/><!--公共css-->
+<link href="css/qkyui2.0.css" rel="stylesheet" type="text/css"/><!--ui控件css-->
+<link href="css/qkyuih5_theme_xsda.css" rel="stylesheet" type="text/css"/><!--ui控件主题颜色风格css-->
+<link  href="css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css"/><!--ui控件css-->
+<!--附加css-->
+<link href="css/xsda.css" rel="stylesheet" type="text/css"/>
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bil/echarts.common.min.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/getpy.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/qky_h5ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/swiper-3.3.1.min.js"></script>
+<script src="js/tb_h5.js"></script>
+<!--插件js-->
+<style>.h260{ height:260px;}</style>
+</head>
+<body class="qkybody h100 po_ab">
+
+<!--头部标准，一般固定-->
+<div class="qkyh5_header noshadow">
+    <div class="qkyh5_topbox ub ub-ac ba_top co_ff pa_lr16 po_r">
+        <a class="iskuai wd_20 co_ff oth_stubut" ><i class="appicon fz_24">&#xe601;</i></a>
+        <div class="ub-f1 fz_20 fz_we t_c pa_tb12">分类汇总</div>
+        <a class="iskuai wd_20 co_ff t_r" href="index.html"><i class="appicon fz_24">&#xe602;</i></a>
+        <div class="oth_stubox trn">
+            <a class="clear3 po_r" href="index_fltj.html"><i class="appicon fl fz_24 co_ff po_ab">&#xe611;</i>分类汇总</a>
+            <a class="clear3 po_r" href="index.html"><i class="appicon fl fz_24 co_ff po_ab">&#xe612;</i>学生档案</a>
+        </div>
+    </div>
+    <div class="qkysel wd_100 br_b br_ddd">
+        <div class="selshow br_fff co_z1 inp pa_tb6 ba_fa  pl0">
+            <a class="selectON dian3 t_c wd_100 pr0" id="ks_type">
+                <label><span class="spone fz_20 co_z1 fz_we">一年级</span><span class="sptwo fz_20 co_z1 fz_we">(2)班</span></label>
+                <i class="appicon ml6 fz_22">&#xe600;</i>
+            </a>
+            <div class="optionbox h40 clear3 trn">
+            	<div class="zd"></div>
+                <div class="swiper-container sp_one wd_50 fl"><div class="swiper-wrapper">
+                    <div class='swiper-slide'><a class="option">一年级</a></div>
+                    <div class='swiper-slide'><a class="option">二年级</a></div>
+                    <div class='swiper-slide'><a class="option">三年级</a></div>
+                    <div class='swiper-slide'><a class="option">四年级</a></div>
+                </div></div>
+                <div class="swiper-container sp_two wd_50 fr"><div class="swiper-wrapper">
+                    <div class='swiper-slide'><a class="option">（1）班</a></div>
+                    <div class='swiper-slide'><a class="option">（2）班</a></div>
+                    <div class='swiper-slide'><a class="option">（3）班</a></div>
+                </div></div> 
+            </div>  
+        </div>
+    </div>
+</div>
+
+<!--中部标准，一般放列表-->
+<div class="qkyh5_main  pb0 ba_ff">
+
+<div class="wd_90 ma_lrauto mt16">
+    <label class="fz_22 iskuai co_bl pa_tb12 pl6 pr6 fz_we dbg_bl"><i class="qkyicon mr6 fz_18">&#xe7f4;</i>男女比例</label>
+    <div class="h260 wd_100" id="xb" ></div>
+</div>
+
+<div class="wd_90 ma_lrauto mt16">
+    <label class="fz_22 iskuai co_ye2 pa_tb12 pl6 pr6 fz_we dbg_ye"><i class="qkyicon mr6 fz_18">&#xe7f4;</i>年龄分布</label>
+    <div class="h260 wd_100" id="nl"></div>
+</div>
+
+<div class="wd_90 ma_lrauto mt16">
+    <label class="fz_22 iskuai co_gr pa_tb12 pl6 pr6 fz_we dbg_gr"><i class="qkyicon mr6 fz_18">&#xe7f4;</i>户籍类别</label>
+    <div class="h260 wd_100" id="hj"></div>
+</div>
+
+<div class="wd_90 ma_lrauto mt16">
+    <label class="fz_22 iskuai co_bl pa_tb12 pl6 pr6 fz_we dbg_bl"><i class="qkyicon mr6 fz_18">&#xe7f4;</i>民族分布</label>
+    <div class="h260 wd_100" id="mz"></div>
+</div>
+
+<div class="wd_90 ma_lrauto mt16">
+    <label class="fz_22 iskuai co_ye2 pa_tb12 pl6 pr6 fz_we dbg_ye"><i class="qkyicon mr6 fz_18">&#xe7f4;</i>入学方式</label>
+    <div class="h260 wd_100" id="rx"></div>
+</div>
+
+<div class="wd_90 ma_lrauto mt16">
+    <label class="fz_22 iskuai co_gr pa_tb12 pl6 pr6 fz_we dbg_gr"><i class="qkyicon mr6 fz_18">&#xe7f4;</i>就读方式</label>
+    <div class="h260 wd_100" id="jd"></div>
+</div>
+
+   
+</div>
+
+
+
+<script>
+
+//滚动下拉选择插件赋值（核心，一定要渲染完后再执行）
+var sp_one = new Swiper('.sp_one', {
+	direction: 'vertical',
+	loop : true,
+	slidesPerView :3,
+	centeredSlides : true,
+	onSlideChangeEnd: function(){
+		$(".spone").html($(".sp_one .swiper-slide-active a").html());
+		Xrech("nl",datas_nl,"xb",datas_six,"hj",datas_hj,"mz",datas_mz,"rx",datas_rx,"jd",datas_jd);
+	}
+});
+var sp_two = new Swiper('.sp_two', {
+	direction: 'vertical',
+	loop : true,
+	slidesPerView :3,
+	centeredSlides : true,
+	onSlideChangeEnd: function(){
+		$(".sptwo").html($(".sp_two .swiper-slide-active a").html());
+		Xrech("nl",datas_nl,"xb",datas_six,"hj",datas_hj,"mz",datas_mz,"rx",datas_rx,"jd",datas_jd);	
+	}
+});
+
+
+var datas_six={"男":[650,"#6fcefe"],"女":[350,"#fba0a0"]};
+var datas_nl={"10岁":[2,2],"11岁":[5,6],"12岁":[12,12],"13岁":[24,24],"14岁":[32,32],"15岁":[23,25],"16岁":[14,12]};
+var datas_hj={"城镇户口":[380,366],"农业户口":[477,462]};
+var datas_mz={"蒙古族":10,"苗族":18,"汉族":60,"土家族":8,"藏族":2,"回族":11,"满族":4};
+var datas_rx={"外校转入":[24,"#d6d800"],"民族班":[34,"#ffe57d"],"一般入学":[68,"#ff9936"],"交换生":[28,"#ff824b"],"特招生":[18,"#fff600"],"其他":[16,"#ffd300"]};
+var datas_jd={"借宿":[100,"#b7ed64"],"走读":[200,"#71e479"],"住校":[142,"#349f33"]};
+
+
+$(function(){
+	qkyh5_topa_header(0,1);
+	oth_stubut();
+	qkysel_news();
+	Xrech("nl",datas_nl,"xb",datas_six,"hj",datas_hj,"mz",datas_mz,"rx",datas_rx,"jd",datas_jd);
+});
+
+$(window).on('resize',function(){
+	Xrech("nl",datas_nl,"xb",datas_six,"hj",datas_hj,"mz",datas_mz,"rx",datas_rx,"jd",datas_jd);
+
+});
+
+
+</script>
+</body>
+</html>

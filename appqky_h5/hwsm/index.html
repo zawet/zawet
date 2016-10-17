@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>扫码手机页面</title>
+<!--框架css-->
+<link href="css/hwsm.css" rel="stylesheet" type="text/css"/><!--公共css-->
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<!--插件js-->
+
+</head>
+<body class="qkybody">
+
+    <!--头部标准，一般固定-->
+    <div class="qkyh5_header">
+        <div class="qkyh5_topbox ub ub-ac ba_top co_ff pa_lr16">
+        <div class="ub-f1 fz_20 fz_we t_c pa_tb12">扫码签到</div>
+        </div>
+    </div>
+    <!--中部标准，一般放列表-->
+    <div class="qkyh5_main  ">
+    <div class="ub ba_ff">
+        <div class="wd_16 t_c mt8"><i class="appicon fz_40 co_gr">&#xe60a;</i></div>
+        <div class="ub-f1  pa_lr16">
+            <div class=" br_b br_ddd pa_14 fz_18 co_z1">产品研讨会</div>
+            <div class=" br_b br_ddd pa_14 co_z9 lh28">针对人人通学生空间，通知技术，设计，测试相关人员，进行产品评审。</div>
+        </div>
+    </div>
+    <div class="ub ba_ff">
+        <div class="wd_16 t_c mt8"><i class="appicon fz_40 co_gr">&#xe606;</i></div>
+        <div class="ub-f1  pa_16 ">
+            <div class=" pa_lr14 mb16 fz_18">2016/08/27 8:00:00<i class="appicon ml16 fz_24 co_gr">&#xe607;</i></div>
+            <div class=" pa_lr14  fz_18">2016/08/27 9:15:00<i class="appicon ml16 fz_24 co_ye2">&#xe603;</i></div>
+        </div>
+    </div>
+    <div class="ub ub-ac ba_ff">
+        <div class="wd_16 t_c iconbox"><i class="appicon fz_40 co_gr">&#xe600;</i></div>
+        <div class="ub-f1  pa_lr16 ">
+            <div class=" pa_lr14 pa_tb20 fz_18 br_t br_ddd co_z1">公司17楼9宫格会议室</div>
+        </div>
+    </div>
+    <div class="ub ub-ac ba_ff br_b br_ddd pb10">
+        <div class="wd_16 t_c iconbox"><i class="appicon fz_40 co_gr">&#xe60e;</i></div>
+        <div class="ub-f1  pa_lr16 ">
+            <div class=" pa_lr14 pa_tb16 fz_18 br_t br_ddd co_z1">请输入手机号</div>
+            <div class=" wd_90 pb16 ma_lrauto"><input type="text" class="wd_100 lh32 fz_18 box_b pl8 pr8 co_z3" style=" border:1px solid #ddd"></div>
+        </div>
+    </div>
+    
+    </div>
+        
+	<div class="qkyh5_footbg br_t br_ddd ba_ff ">
+        <ul class="footer ub ub-ac t_c">
+            <li class="ub-f1 fz_18  brra_6  ba_gr"><a href="#" class="co_ff iskuai">签到</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+<script>
+$(function(){
+	qkyh5_topa_header2(0,'.qkyh5_header' ,'.qkyh5_main');
+
+});
+
+function qkyh5_topa_header2(i,h,m){
+	var titHeight = $(h).height()+i;
+	$(m).css({"paddingTop":titHeight+"px"});
+}
+
+</script>
+</body>
+</html>

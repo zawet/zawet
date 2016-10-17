@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>考勤_家长登录记录</title>
+<!--框架css-->
+<link  href="css/animate.css" rel="stylesheet" type="text/css"/><!--css3 动画库-->
+<link href="css/common_h5.css" rel="stylesheet" type="text/css"/><!--公共css-->
+<link href="css/qkyui2.0.css" rel="stylesheet" type="text/css"/><!--ui控件css-->
+<link href="css/qkyuih5_theme_kq.css" rel="stylesheet" type="text/css"/><!--ui控件主题颜色风格css-->
+<!--附加css-->
+<link href="css/kq.css" rel="stylesheet" type="text/css"/>
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bil/jqui1.11.4/jquery-ui.min.js" ></script>
+<script language="JavaScript" charset="utf-8" src="js/qky_h5ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/qkyui_cal.js"></script>
+<!--插件js-->
+
+</head>
+<body class="qkybody">
+
+	<!--头部标准，一般固定-->
+	<div class="qkyh5_header">
+        <div class="qkyh5_topbox ub ub-ac ba_top co_ff pa_lr16 po_r">
+            <a class="iskuai wd_20 co_ff" href="index_par.html"><i class="qkyicon fz_24">&#xe68b;</i></a>
+            <div class="ub-f1 fz_20 fz_we t_c pa_tb12 oth_stubut" ><span>王东冬</span><i class="appicon ml6 fz_18">&#xe603;</i></div>
+            <div class="wd_20"></div>
+            <div class="oth_stubox trn">
+            	<a>王东冬</a>
+                <a>王西西</a>
+                <a>王北北</a>
+            </div>
+        </div>
+       
+        
+    </div>
+    
+    <!--中部标准，一般放列表-->
+    <div class="qkyh5_main">
+        <div class="ub ub-ac pa_lr20 pa_tb16 ba_ff br_b br_ddd">
+            <div class="ub-f1 ml10">
+                <div class="co_z1 fz_we fz_18 mb6">王东冬</div>
+                <div class="fz_16 co_z9 mb6">2016年08月01日 15:00:00</div>
+                <div class="fz_16 co_z9"><i class="appicon mr6 co_red fz_20">&#xe60e;</i>病假</div>
+            </div>
+            <div class="qky_i_t mr10">
+                <div class="qky_i co_gr"><i class="appicon fz_80">&#xe60a;</i></div>
+                <div class="qky_t co_ff fz_18">请假</div>
+            </div>
+        </div>  
+        <div class="ub ub-ac pa_lr20 pa_tb16 ba_ff br_b br_ddd">
+            <div class="ub-f1 ml10">
+                <div class="co_z1 fz_we fz_18 mb6">王东冬</div>
+                <div class="fz_16 co_z9 mb6">2016年08月01日 15:00:00</div>
+                <div class="fz_16 co_z9"><i class="appicon mr6 co_red fz_20">&#xe60e;</i>病假</div>
+            </div>
+            <div class="qky_i_t mr10">
+                <div class="qky_i co_red"><i class="appicon fz_80">&#xe60a;</i></div>
+                <div class="qky_t co_ff fz_18">矿课</div>
+            </div>
+        </div>
+        <div class="ub ub-ac pa_lr20 pa_tb16 ba_ff br_b br_ddd">
+            <div class="ub-f1 ml10">
+                <div class="co_z1 fz_we fz_18 mb6">王东冬</div>
+                <div class="fz_16 co_z9 mb6">2016年08月01日 15:00:00</div>
+                <div class="fz_16 co_z9"><i class="appicon mr6 co_red fz_20">&#xe60e;</i>病假</div>
+            </div>
+            <div class="qky_i_t mr10">
+                <div class="qky_i co_ye"><i class="appicon fz_80">&#xe60a;</i></div>
+                <div class="qky_t co_ff fz_18">早退</div>
+            </div>
+        </div>
+        <div class="ub ub-ac pa_lr20 pa_tb16 ba_ff br_b br_ddd">
+            <div class="ub-f1 ml10">
+                <div class="co_z1 fz_we fz_18 mb6">王东冬</div>
+                <div class="fz_16 co_z9 mb6">2016年08月01日 15:00:00</div>
+                <div class="fz_16 co_z9"><i class="appicon mr6 co_red fz_20">&#xe60e;</i>病假</div>
+            </div>
+            <div class="qky_i_t mr10">
+                <div class="qky_i co_bl2"><i class="appicon fz_80">&#xe60a;</i></div>
+                <div class="qky_t co_ff fz_18">迟到</div>
+            </div>
+        </div>
+    </div>
+
+    <!--加入活动-->
+    <div class="qkyh5_footbg br_t br_ddd ba_ff" id="join">
+        <ul class="footer ub ub-ac t_c">
+            <li class="ub-f1 fz_18 brra_6"><a href="index_partj.html"  class="co_ff iskuai"><i class="appicon mr4 fz_20">&#xe60b;</i>查看考勤统计</a></li>
+        </ul>
+    </div>
+
+
+
+
+<!--弹窗---------------------------------->
+<!--单信息弹框-->
+<div class="qky_maskbox" id="del_msg">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian">
+        <div class="qky_masktit">删除</div>
+        <div class="qky_maskcont sigtext">是否确认删除该预约申请？</div>
+        <div class="qky_maskbuts ub ub-ac">
+            <a class=" co_89 one ub-f1" onClick="popOut('#del_msg')">取消</a>
+            <a class="co_gr ub-f1">确认</a>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+$(function(){
+	qkyh5_topa_header(0,1);
+	
+	$(".oth_stubut").click(function(){
+		$('.oth_stubox').toggleClass('show');
+	});
+	$(".oth_stubox a").each(function(i) {
+        $(this).click(function(){
+			$(".oth_stubut span").html($(this).html());
+			$('.oth_stubox').removeClass('show');
+		});
+    });
+});
+
+
+
+</script>
+</body>
+</html>

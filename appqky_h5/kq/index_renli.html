@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>教师考勤--转交人员选择</title>
+<!--框架css-->
+<link  href="css/animate.css" rel="stylesheet" type="text/css"/><!--css3 动画库-->
+<link href="css/common_h5.css" rel="stylesheet" type="text/css"/><!--公共css-->
+<link href="css/qkyui2.0.css" rel="stylesheet" type="text/css"/><!--ui控件css-->
+<link href="css/qkyuih5_theme_kq.css" rel="stylesheet" type="text/css"/><!--ui控件主题颜色风格css-->
+<!--附加css-->
+<link href="css/kq.css" rel="stylesheet" type="text/css"/>
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bil/jqui1.11.4/jquery-ui.min.js" ></script>
+<script language="JavaScript" charset="utf-8" src="js/qky_h5ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/qkyui_cal.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/getpy.js"></script>
+<!--插件js-->
+
+</head>
+<body class="qkybody h100 po_ab">
+
+    <!--头部标准，一般固定-->
+    <div class="qkyh5_header">
+        <div class="qkyh5_topbox ub ub-ac ba_top co_ff pa_lr16">
+            <a class="iskuai wd_20 co_ff" href="index_spteasp.html"><i class="qkyicon fz_24">&#xe68b;</i></a>
+            <div class="ub-f1 fz_20 fz_we t_c pa_tb12">选择下一步审批人</div>
+            <div class=" t_r"><a class="qkybut hbg but_gr brra_6 li_he30 fz_16 nbshw" href="index_sptea.html">确定</a></div>
+        </div>
+        <div class="qkyh5_barnav ub ub-ac">
+            <a class="ub-f1 cur" isgo="zmlist">审批人</a>
+            <a class="ub-f1" isgo="zjlist">最近</a>
+        </div>
+        <div class="qkyh5_search ub ub-ac qkysel ">
+            <div class="ub-f1 seachtime  selshow inp hicon brra_8 br_ddd">
+                <a class="search_btn"><i class="appicon fz_22 co_z9">&#xe60b;</i></a>
+                <input type="text" name="title" value="" placeholder="搜索审批人姓名" id="title" class="caldate fz_16 pl16"/>
+            </div>
+        </div>
+    </div>
+    <!--中部标准，一般放列表-->
+    <div class="qkyh5_main pb0 h100 box_b">
+        <div class="navlibox zmlist  h100 po_r">
+           <div class="qky_zmulbox wd_100 h100 socrllbox" id="qky_zmulbox"></div>
+           <div class="qky_zmselbox wd_8 h100 socrllbox" id="qky_zmselbox"></div>
+        </div>
+        <div class="navlibox zjlist yc">
+        	<div class="qky_zmulbox wd_100 h100 socrllbox" id="zjrenlist"></div>
+        </div>
+    </div>
+
+<script>
+ var datas=["蔡勇剑"," 关瑞荣","桂莹","黄慧芳","林静杰","万洪泉","王霖","王转转","吴泳芝","谢帅","杨洪彩","杨鹏","健康网"," 关瑞荣","桂莹","黄慧芳","林静杰","万洪泉","王霖","王转转","吴泳芝","谢帅","杨洪彩","杨鹏","zilwteaf","llk","lll","#ljls","56646542","*我","$hjk","我#￥"];
+ var zjdatas=["蔡勇剑"," 关瑞荣","桂莹","黄慧芳","林静杰","万洪泉","王霖"];
+ 
+$(function(){
+	qkyh5_topa_header(0,1);
+	qkyh5_navclick2(function(nthis){
+		$(".navlibox").addClass("yc");
+		$("."+nthis.attr("isgo")).removeClass("yc");
+		if(nthis.index()==1){
+			$(".qkyh5_search").addClass("yc");
+			qkyh5_topa_header(0,1);
+		}else{
+			$(".qkyh5_search").removeClass("yc");
+			qkyh5_topa_header(0,1);
+		}
+	});
+	qky_zmlist("#qky_zmulbox","#qky_zmselbox",datas,2,1,"#zjrenlist",zjdatas,function(rthis){
+		rthis.parents(".qky_zmulbox").find(".renli").removeClass("cur");
+		rthis.parents(".qky_zmulbox").find(".renli span").removeClass("cur");
+		rthis.addClass("cur");
+		rthis.find("span").addClass("cur");
+		
+	});
+});
+
+
+
+
+</script>
+</body>
+</html>

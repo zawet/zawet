@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>教职工_搜索</title>
+<!--框架css-->
+<link  href="css/animate.css" rel="stylesheet" type="text/css"/><!--css3 动画库-->
+<link href="css/common_h5.css" rel="stylesheet" type="text/css"/><!--公共css-->
+<link href="css/qkyui2.0.css" rel="stylesheet" type="text/css"/><!--ui控件css-->
+<link href="css/qkyuih5_theme_jzgda.css" rel="stylesheet" type="text/css"/><!--ui控件主题颜色风格css-->
+<!--附加css-->
+<link href="css/jzgda.css" rel="stylesheet" type="text/css"/>
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bil/jqui1.11.4/jquery-ui.min.js" ></script>
+<script language="JavaScript" charset="utf-8" src="js/qky_h5ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/qkyui_cal.js"></script>
+<!--插件js-->
+
+</head>
+<body class="qkybody">
+<div class="qkyh5_header">
+    <div class="qkyh5_topbox ub ub-ac ba_top co_ff pa_lr16">
+        <a class="iskuai wd_20 co_ff" href="index.html"><i class="qkyicon fz_24">&#xe68b;</i></a>
+        <div class="ub-f1 fz_20 fz_we t_c pa_tb12">教师/职工</div>
+        <div class="wd_20"></div>
+    </div>
+</div>
+
+<!--中部标准，一般放列表-->
+<div class="qkyh5_main">
+	<div class="fz_20 fz_we co_z9 t_c pt26 pb26"><i class="appicon mr6 fz_22 fz_we">&#xe600;</i>选择其中条件进行查询</div>
+    <div class="qkysel ba_ff pa_tb16 br_t br_b br_ddd mb6 ub ub-ac pl26 pr26">
+        <div class="seltxt wd_30 fz_18 co_z3">姓名搜索</div>
+        <div class="selshow inp br_fff ub-f1 "><input type="text" value="贺小晓" class="fz_18 co_z3"></div>
+        <a class="wd_5 t_c"><i class="appicon fz_20">&#xe600;</i></a>
+    </div>
+    <div class="qkysel ba_ff pa_tb16 br_t br_b br_ddd mb6 ub ub-ac pl26 pr26">
+        <div class="seltxt wd_30 fz_18 co_z3">性别</div>
+        <div class="sexcho clear3 ml16 nan"><a class="qkychbox fl w30 br_fff co_89" style=" margin-top:-2px;"><i class="appicon  fz_20">&#xe603;</i></a><label class="fl ml6 fz_18 co_89">男性</label></div>
+        <div class="sexcho clear3 ml26 nv"><a class="qkychbox fl w30 br_fff co_89"><i class="appicon fz_20">&#xe604;</i></a><label class="fl ml6 fz_18 co_89">女性</label></div>
+    </div>
+    <div class="qkysel ba_ff pa_tb16 br_t br_b br_ddd mb6 ub ub-ac pl26 pr26">
+        <div class="seltxt wd_30 fz_18 co_z3">部门</div>
+        <div class="selshow br_fff ub-f1 fz_18 co_z3 inp">
+        <a class="selectON dian3" id="ks_type"><label>行政部</label><span class="selicon co_gr"><i class="appicon">&#xe613;</i></span></a>
+        <div class="optionbox h40 socrllbox">
+        <a class="option trn dian3" value="校长室">校长室</a>
+        <a class="option trn dian3" value="教务处">教务处</a>
+        <a class="option trn dian3 cur" value="行政部">行政部</a>
+        <a class="option trn dian3" value="语文组">语文组</a>
+        <a class="option trn dian3" value="数学组">数学组</a>
+        <a class="option trn dian3" value="物理组">物理组</a>
+        <a class="option trn dian3" value="语文组">语文组</a>
+        <a class="option trn dian3" value="数学组">数学组</a>
+        <a class="option trn dian3" value="物理组">物理组</a>
+        <a class="option trn dian3" value="语文组">语文组</a>
+        <a class="option trn dian3" value="数学组">数学组</a>
+        <a class="option trn dian3" value="物理组">物理组</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!--底部浮动按钮--> 
+<div class="qkyh5_footbg br_t br_ddd ba_ff">
+    <ul class="footer ub ub-ac t_c">
+    	<li class="ub-f3 fz_18 mr16 brra_6"><a href="index_teada.html" class="co_ff iskuai"><i class="appicon mr4 fz_22">&#xe600;</i>查询</a></li>
+        <li class="ub-f1 fz_18 brra_6"><a href="index_teada.html" class="co_ff iskuai"><i class="appicon fz_22">&#xe611;</i></a></li>
+    </ul>
+</div>
+
+<script>
+$(function(){
+	qkychbox_sex();
+	qkysel();
+	qkyh5_topa_header(0,1);
+})
+function qkychbox_sex(){
+	$(".sexcho").each(function(i) {
+        $(this).click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur");
+		});
+    });
+}
+</script>
+</body>
+</html>
