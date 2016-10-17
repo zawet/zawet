@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>教师培训_分组设定</title>
+<!--附加css-->
+<link href="css/jspx.css" rel="stylesheet" type="text/css"/>
+<!--框架css-->
+<link href="css/common_3.2.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui_theme_jspx.css" rel="stylesheet" type="text/css"/>
+
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bil/jqui1.11.4/jquery-ui.min.js" ></script>
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+<!--插件js-->
+</head>
+<body>
+
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">张三 教师</a><a href="#">安全退出</a><a href="#">设置</a></div>
+            <div class="qky_top_button"><a href="#"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header1">
+        <div class="qky_top_box">
+           	<div class="qky_tab fr w_co"><i class="qkyicon ">&#xe69c;</i>帮助</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe61d;</i>全课云APP</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon fz_4">&#xe616;</i></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+	<div class="qky_main clear3">    
+    	<div class="qkynav_zu clear3">
+            <a class="trn" href="index.html"><i class="appicon mr6">&#xe605;</i>培训管理</a>
+            <a class="cur trn" href="index_fz.html"><i class="appicon mr6">&#xe604;</i>分组设定</a>
+        </div>	
+        <div class="main_bg pl0">
+           <div class="lcbox clear3">
+               <div class="lcone on fl co_ff fz_18 t_c wd_32 trn">第一步：分组管理</div>
+               <div class="lctwo fl co_ff fz_18 t_c wd_64 trn">第二步：组内人员管理</div>
+           </div>
+           
+           <div class="clear3 pl16 mt26">
+            	<div class="szren_zu wd_26 fl">
+                	<div class="szren_zutitle ba_gr">已有分组</div>
+                    <ul id="renzu" class="scrollbox mt10">
+                        <li class="trn clear3">
+                            <a class="qkychbox yuan trn fl mr6 h34" ischoose="0"><i class="qkyicon">&#xe69f;</i></a>
+                            <span class="fl zuname">科组长</span><a class="fr co_gr clear_zj hbtl zu_close" onClick="popIn('#delmsg')">删除</a>
+                        </li>
+                        <li class="trn clear3">
+                            <a class="qkychbox yuan trn fl mr6 h34" ischoose="0"><i class="qkyicon">&#xe69f;</i></a>
+                            <span class="fl zuname">年级主任</span><a class="fr co_gr clear_zj hbtl zu_close" onClick="popIn('#delmsg')">删除</a>
+                        </li>
+                        <li class="trn clear3">
+                            <a class="qkychbox yuan trn fl mr6 h34" ischoose="0"><i class="qkyicon">&#xe69f;</i></a>
+                            <span class="fl zuname">班主任</span><a class="fr co_gr clear_zj hbtl zu_close" onClick="popIn('#delmsg')">删除</a>
+                        </li>
+                        <li class="trn clear3">
+                            <a class="qkychbox yuan trn fl mr6 h34" ischoose="0"><i class="qkyicon">&#xe69f;</i></a>
+                            <span class="fl zuname">校长</span><a class="fr co_gr clear_zj hbtl zu_close" onClick="popIn('#delmsg')">删除</a>
+                        </li> 
+                    </ul>
+                </div>
+                
+                <div class="fl wd_26 ba_f9  rensel onesel" style="margin-left:4%">
+                        <div class="qky_tit pa_tb10 fz_16 t_c">教师名单</div>
+                        <div class="qkyinp ma_lrauto wd_90 mt10 clear3 brra_6  ">
+                             <div class="fl inpbut wd_10"><a ><i class="qkyicon fz_18 co_a2">&#xe63b;</i></a></div>
+                             <div class="fl inptext wd_90"><input type="text" placeholder="搜索教师姓名" class="co_a2"></div>
+                        </div>
+                        <div class="scrollbox">
+                        <ul id="renone">
+                            <li class="clear3"><a class="qkychbox fang trn fl mr6 h34"><i class="qkyicon">&#xe69f;</i></a><span class="fl">甲大大</span></li>
+                            <li class="clear3"><a class="qkychbox fang trn fl mr6 h34"><i class="qkyicon">&#xe69f;</i></a><span class="fl">已钟总</span></li>
+                            <li class="clear3"><a class="qkychbox fang trn fl mr6 h34"><i class="qkyicon">&#xe69f;</i></a><span class="fl">滨小小</span></li>
+                            <li class="clear3"><a class="qkychbox fang trn fl mr6 h34"><i class="qkyicon">&#xe69f;</i></a><span class="fl">关老师</span></li>
+                            <li class="clear3"><a class="qkychbox fang trn fl mr6 h34"><i class="qkyicon">&#xe69f;</i></a><span class="fl">龚老师</span></li>
+                        </ul>
+                        </div>
+                </div>
+                <div class="fl wd_14 pt26">
+                        <a class="qkybut hbg brad4 ma_lrauto auto wd_80 iskuai mt26 ba_d8" id="addren"><span>添加</span><i class="appicon ml6 fz_20">&#xe621;</i></a>
+                        <a class="qkybut hbg brad4 ma_lrauto auto wd_80 iskuai mt16 ba_d8" id="removeren"><i class="appicon mr6">&#xe622;</i><span>删除</span></a>
+                </div>
+                <div class="fl wd_26 ba_f9 rensel twosel">
+                        <div class="qky_tit  pa_tb10 fz_16 t_c">已选教师</div>
+                        <div class="pa_tb10 fz_14  t_c ba_ee co_a2">已选<span class="renshu">0</span>人</div>
+                        <div class="scrollbox"><ul id="rentwo"></ul></div>  
+                </div>
+        		<div class="clear"></div>
+                <div class="t_c wd_26 mt16 fl">
+                <a class="qkybut fhbg  brad4 auto wd_60  min_cbut fz_16" onClick="popIn('#addzu')"><i class="appicon mr6 fz_20">&#xe608;</i>新建分组</a>
+                </div>
+                <div class="t_c wd_74 mt16 fl">
+                <a class="qkybut hbg  brad4 auto wd_20  min_cbut fz_16 ba_d8"><i class="appicon mr6 fz_20">&#xe610;</i>保存</a>
+                </div>  
+            </div>
+        </div>
+    </div>   
+</div>
+<!--底部-->
+<div class="qky_footer">
+<div>全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+<!--组模板-->
+<div class="yc" id="zu_mold">
+<li class="trn clear3">
+<a class="qkychbox yuan trn fl mr6 h34" ischoose="0"><i class="qkyicon">&#xe69f;</i></a>
+<span class="fl zuname">校长</span><a class="fr co_gr clear_zj hbtl zu_close" onClick="popIn('#delmsg')">删除</a>
+</li>
+</div>
+
+<!--弹窗---------------------------------->
+<!--删除提示-->
+<div class="qky_maskbox" id="delmsg" >
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian L">
+        <div class="qky_masktit"><span id="titname">删除信息提示</span><a class="maskclose" onClick="popOut('#delmsg')"><i class="qkyicon">&#xe6aa;</i></a></div>
+        <div class="qky_maskcont pa_lr16 pt16">
+        	<i class="appicon co_bl" id="msgicon">&#xe620;</i>
+        	<div class="co_bl" id="msgtxt">你确定要删除当前分组数据吗？</div>
+        	<div class="t_c mb26">
+            <a class="qkybut hbg brad4 M  mr16" onClick="popOut('#delmsg')"><i class="appicon mr6">&#xe610;</i>确定</a>
+            <a class="qkybut hbg brad4 M" onClick="popOut('#delmsg')"><i class="appicon mr6">&#xe607;</i>取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--新建组-->
+<div class="qky_maskbox" id="addzu" >
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian L">
+        <div class="qky_masktit"><span id="titname">新建分组</span><a class="maskclose" onClick="popOut('#addzu')"><i class="qkyicon">&#xe6aa;</i></a></div>
+        <div class="qky_maskcont pa_lr16 pt16">
+        	<div class="qkysel wd_90 ma_lrauto mb16">
+            <div class="seltxt co_bl"><i class="appicon mr4">&#xe60c;</i>新组名称</div>
+            <div class="selshow auto wd_100 brra_4 inp"><input type="text" id="zuname"></div>
+            </div>
+        	<div class="t_c mb26">
+            <a class="qkybut hbg brad4 M  mr16" onClick="popOut('#addzu');setdata();"><i class="appicon mr6">&#xe610;</i>确定</a>
+            <a class="qkybut hbg brad4 M" onClick="popOut('#addzu')"><i class="appicon mr6">&#xe607;</i>取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+$(function() {
+	$("#renzu").on("click","li", function() {
+    	$(this).toggleClass("cur").siblings().removeClass("cur");
+		$(this).find(".zu_close").toggle();
+		$(this).find(".yuan").toggleClass("cur").attr("ischoose","1");
+		$(this).siblings().find(".yuan").removeClass("cur").attr("ischoose","0");
+		$(this).siblings().find(".zu_close").hide();
+		change_color($(this).parent().find(".yuan.cur").length);
+ 	});
+	
+});
+
+function rensel(){
+	zifang()
+	$("#addren").click(function(){
+		$(".onesel ul li.cur").clone().prependTo(".twosel ul");
+		$(".onesel ul li.cur").remove();
+		isren();
+	});
+	$("#removeren").click(function(){
+		$(".twosel ul li.cur").clone().prependTo(".onesel ul");
+		$(".twosel ul li.cur").remove();
+		isren();
+	});
+	
+}
+function zifang(){
+	$("#renone").on("click","li", function() {
+    	$(this).toggleClass("cur").find(".fang").toggleClass("cur").attr("ischoose","1");
+ 	});
+	$("#rentwo").on("click","li", function() {
+    	$(this).toggleClass("cur").find(".fang").toggleClass("cur").attr("ischoose","1");
+ 	});
+}
+
+
+function isren(){
+	$(".renshu").html($(".twosel ul li").length);
+}
+
+
+function setdata(){
+	var newszu=$("#zuname").val();
+	$("#zu_mold span.zuname").html(newszu);
+	$("#renzu").append($("#zu_mold").html());
+}
+
+function change_color(isof){
+	rensel();
+		if(isof<=0){
+			$(".lcone").addClass("on");
+			$(".lctwo").removeClass("on");
+			$(".ischa_ba").addClass("ba_d8");
+			$(".ischa_co").addClass("co_a2").removeClass("co_bl");
+			$(".qky_tit").removeClass("ba_bl");
+			$(".ba_bl2").addClass("ba_ee").removeClass("ba_bl2");
+			$(".rensel ul li").removeClass("cur").find(".fang").removeClass("cur");
+		}else{
+			$(".lctwo").addClass("on");
+			$(".lcone").removeClass("on");
+			$(".qky_tit").addClass("ba_bl");
+			$(".ba_d8").addClass("ischa_ba").removeClass("ba_d8");
+			$(".co_a2").addClass("ischa_co").addClass("co_bl").removeClass("co_a2");
+			$(".ba_ee").addClass("ba_bl2").removeClass("ba_ee");
+		}
+	
+}
+function qkyren_fun(id,fun){
+	$(id+" li").each(function(i) {
+        $(this).click(function(){
+			fun($(this));
+		});
+    });
+}
+
+</script>
+
+</body>
+</html>

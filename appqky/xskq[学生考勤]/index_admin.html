@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>学生考勤—管理员</title>
+<link href="css/xskq.css" rel="stylesheet" type="text/css"/>
+<!--框架css-->
+<link href="css/common_2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui.css" rel="stylesheet" type="text/css"/>
+
+
+<!--公共js-->
+<script src="bil/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="bil/jqui1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box clear3">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">张三 教师</a><a href="#">安全退出</a><a href="#">设置</a></div>
+            <div class="qky_top_button"><a href="#" class="trn"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+        </div>
+    </div>
+    <div class="header1">
+        <div class="qky_top_box clear3">
+            
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe69c;</i>帮助</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe61d;</i>全课云APP</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon fz_4">&#xe616;</i></div>
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+    <div class="qky_main clear3">
+    	<div class="qkynav_zu clear3 adminbiao">
+        <a class="cur trn fz_16">日表</a>
+        <a class="trn fz_16">周表</a>
+        <a class="trn fz_16">月表</a>
+        <a class="trn fz_16">学期表</a>
+        </div>
+    	<div class="xskq_navs" style=" padding:16px 50px;">
+        <div class="butnav mb16">
+            <a class="qkybut hbg zi brad4 fr M min_cbut fz_16" onClick="popIn('#info_mag')"><i class="appicon mr6">&#xe617;</i>信息设置</a>
+            <a class="qkybut hbg zi brad4 fr M min_cbut fz_16 mr16" href="index_admin_list.html"><i class="appicon mr6">&#xe605;</i>考勤详情</a>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="qkysel mb16 center_l">
+            <div class="seltxt fl  co_gr fz_16">考勤日期：</div>
+            <div class="selshow fl XL inp hicon">
+                <input type="text"  class="caldate fz_18" id="oneday">
+                <a class="timeicon"><i class="appicon">&#xe615;</i></a>
+                <div class="qky_calendar"></div>
+            </div>
+            <a class="qkybut hbg brad4 fl ml16">查看</a>
+            <div class="clear"></div>   
+        </div>
+        <div class="qkysel mb16 center_l yc">
+            <div class="seltxt fl  co_gr fz_16">考勤周期：</div>
+            <div class="selshow fl XL">
+                <a class="selectON dian3 fz_18 t_c" id="ks_type">第一周</a>
+                <div class="optionbox">
+                    <a class="option trn dian3" value="第一周">第一周</a>
+                    <a class="option trn dian3" value="第二周">第二周</a>
+                    <a class="option trn dian3" value="第三周">第三周</a>
+                    <a class="option trn dian3" value="第四周">第四周</a>
+                    <a class="option trn dian3" value="第五周">第五周</a>
+                </div>
+            </div>
+            <a class="qkybut hbg brad4 fl ml16">查看</a>
+            <div class="clear"></div>   
+        </div>
+        <div class="qkysel mb16 center_l yc">
+            <div class="seltxt fl  co_gr fz_16">考勤月份：</div>
+            <div class="selshow fl XL">
+                <a class="selectON dian3 fz_18 t_c" id="ks_type">一月份</a>
+                <div class="optionbox">
+                    <a class="option trn dian3" value="一月份">一月份</a>
+                    <a class="option trn dian3" value="二月份">二月份</a>
+                    <a class="option trn dian3" value="三月份">三月份</a>
+                    <a class="option trn dian3" value="四月份">四月份</a>
+                    <a class="option trn dian3" value="五月份">五月份</a>
+                </div>
+            </div>
+            <a class="qkybut hbg brad4 fl ml16">查看</a>
+            <div class="clear"></div>   
+        </div>
+        <div class="qkysel mb16 center_l yc">
+            <div class="seltxt fl  co_gr fz_16">考勤学期：</div>
+            <div class="selshow fl XL">
+                <a class="selectON dian3 fz_18 t_c" id="ks_type">2016年第一学期</a>
+                <div class="optionbox">
+                    <a class="option trn dian3" value="2016年第一学期">2016年第一学期</a>
+                    <a class="option trn dian3" value="2016年第二学期">2016年第二学期</a>
+                    <a class="option trn dian3" value="2017年第一学期">2017年第一学期</a>
+                    <a class="option trn dian3" value="2017年第二学期">2017年第二学期</a>
+                    <a class="option trn dian3" value="2018年第一学期">2018年第一学期</a>
+                </div>
+            </div>
+            <a class="qkybut hbg brad4 fl ml16">查看</a>
+            <div class="clear"></div>   
+        </div>
+        
+        
+        
+        <div class="selnav">
+        	<div class="qkysel fl ml26">
+                <div class="seltxt fl co_gr">年级：</div>
+                <div class="selshow fl" style="width:196px;">
+                    <a class="selectON dian3" id="ks_type">所有年级</a>
+                    <div class="optionbox">
+                        <a class="option trn dian3" value="所有">所有年级</a>
+                        <a class="option trn dian3" value="初中一年级">初中一年级</a>
+                        <a class="option trn dian3" value="初中二年级">初中二年级</a>
+                        <a class="option trn dian3" value="初中三年级">初中三年级</a>
+                        <a class="option trn dian3" value="高中一年级">高中一年级</a>
+                        <a class="option trn dian3" value="高中二年级">高中二年级</a>
+                        <a class="option trn dian3" value="高中三年级">高中三年级</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="qkysel fl ml26">
+                <div class="seltxt fl co_gr">班级：</div>
+                <div class="selshow fl " style="width:196px;">
+                    <a class="selectON dian3" id="ks_type">所有班级</a>
+                    <div class="optionbox">
+                        <a class="option trn dian3" value="所有班级">所有班级</a>
+                        <a class="option trn dian3" value="初二1班">初二1班</a>
+                        <a class="option trn dian3" value="初二2班">初二2班</a>
+                        <a class="option trn dian3" value="初二3班">初二3班</a>
+                        <a class="option trn dian3" value="初二4班">初二4班</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="qkysel fl ml26">
+                <div class="seltxt fl co_gr">考勤排名：</div>
+                <div class="selshow fl" style="width:196px;">
+                    <a class="selectON dian3" id="ks_type">所有</a>
+                    <div class="optionbox">
+                    	<a class="option trn dian3" value="所有排名">所有排名</a>
+                        <a class="option trn dian3" value="第一名">第一名</a>
+                        <a class="option trn dian3" value="第二名">第二名</a>
+                        <a class="option trn dian3" value="第三名">第三名</a>
+                        <a class="option trn dian3" value="第四名">第四名</a>
+                    </div>					
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+         </div>
+         <div class="njtit mt16">初中一年级</div>
+         <table cellpadding="0" cellspacing="0" border="0"  class="qkytable qian_color">
+                <tr><th>班级</th><th>请假</th><th >迟到</th><th>旷课</th><th>早退</th><th>考勤排名</th></tr>
+                <tr><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr class="even"><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr class="even"><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr class="even"><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr class="even"><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+           </table>
+         <div class="njtit mt16">初中一年级</div>
+         <table cellpadding="0" cellspacing="0" border="0"  class="qkytable qian_color">
+                <tr><th>班级</th><th>请假</th><th >迟到</th><th>旷课</th><th>早退</th><th>考勤排名</th></tr>
+                <tr><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr class="even"><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr class="even"><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr class="even"><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+                <tr class="even"><td class="one">初一（12）班</td><td>1</td><td>5</td><td>0</td><td>3</td><td>第三名</td></tr>
+           </table>
+           <div class="qkypage mt16">
+                <a href="#" class="no">上一页</a>
+                <a href="#" class="cur">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                ...
+                <a href="#">12</a>
+                <a href="#">下一页</a>
+           	</div>
+        </div>   
+    </div>
+</div>
+
+<!--底部-->
+<div class="qky_footer">
+<div>广东全通教育股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+<!--弹窗---------------------------------->
+<div class="qky_maskbox" id="info_mag" >
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XXL">
+        <div class="qky_masktit"><span id="titname">信息设置</span><a class="maskclose" onClick="popOut('#info_mag')"><i class="appicon">&#xe60d;</i></a></div>
+        <div class="qky_maskcont pa_lr16 pt16">
+        	<div class="pa_lr16">
+                <div class="ts_title"><label class="co_gr fz_16">是否发送考勤信息?</label></div>
+                <div class="qkysel clear3 ma_tb12 t_c">
+                    <a class="qkychbox trn cur yuan mr6"  ischoose="0" ><i class="qkyicon">&#xe69f;</i></a><label class=" mr26">是</label>
+                    <a class="qkychbox trn yuan mr6"  ischoose="0" ><i class="qkyicon">&#xe69f;</i></a><label>否</label>
+                </div>
+                <div class="ts_title"><label class="co_gr fz_16">考勤短信内容</label></div>
+                <div class="tssel">
+                    <div class="tssel_tit clear3"><span class="fl"></span><label class="fl">正常到校</label></div>
+                    <textarea>尊敬的冬瓜糖家长，您的孩子于7：40：12到校</textarea>
+                </div>
+                <div class="tssel">
+                    <div class="tssel_tit clear3"><span class="fl"></span><label class="fl">正常出校</label></div>
+                    <textarea>尊敬的冬瓜糖家长，您的孩子于7：40：12离校</textarea>
+                </div>
+                <div class="tssel">
+                    <div class="tssel_tit clear3"><span class="fl"></span><label class="fl">迟到</label></div>
+                    <textarea>尊敬的冬瓜糖家长，您的孩子于8：40：12上课迟到</textarea>
+                </div>
+                <div class="tssel">
+                    <div class="tssel_tit clear3"><span class="fl"></span><label class="fl">早退</label></div>
+                    <textarea>尊敬的冬瓜糖家长，您的孩子于11：40：12上早退</textarea>
+                </div>
+                <div class="tssel mb26">
+                    <div class="tssel_tit clear3"><span class="fl"></span><label class="fl">旷课</label></div>
+                    <textarea>尊敬的冬瓜糖家长，您的孩子于11：40：12上旷课</textarea>
+                </div>
+            </div>
+        	<div class="t_c mb26">
+            <a class="qkybut hbg brad4 M  mr16" onClick="popOut('#info_mag')"><i class="appicon mr6">&#xe60c;</i>确定</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+
+<script>
+$(function() {
+	qkysel();
+	calendar(".timeicon",".qky_calendar",1);//日历启动 点击的元素，容器元素
+	$(".adminbiao a").each(function(i) {
+        $(this).click(function(){
+		 $(".center_l.qkysel").hide();
+		 $(this).addClass("cur").siblings().removeClass("cur");
+		 $(".center_l.qkysel").eq(i).show();
+		});
+    });
+});
+
+
+
+</script>
+</body>
+</html>

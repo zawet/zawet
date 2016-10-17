@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>教师考勤—审批人考勤统计</title>
+<link href="css/jskq.css" rel="stylesheet" type="text/css"/>
+<!--框架css-->
+<link href="css/common_2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui.css" rel="stylesheet" type="text/css"/>
+
+
+<!--公共js-->
+<script src="bil/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="bil/jqui1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box clear3">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">关瑞荣 教师</a></div>
+            <div class="qky_top_button yc"><a href="#" class="trn"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+        </div>
+    </div>
+    <div class="header1" style=" height:48px;">
+        <div class="qky_top_box clear3">
+            <ul class="qky_top_navs">
+            <li><a href="index_approver.html">教师考勤 > 审批>统计</a></li>
+            
+            </ul>
+            <!--<div class="qky_tab fr w_co"><i class="qkyicon ">&#xe69c;</i>帮助</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe61d;</i>全课云APP</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon fz_4">&#xe616;</i></div>-->
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+    <div class="qky_main clear3">
+    	<div class="qkynav_zu clear3 adminbiao">
+        <a class="cur trn fz_16">日表</a>
+        <a class="trn fz_16">周表</a>
+        <a class="trn fz_16">月表</a>
+        <a class="trn fz_16">学期表</a>
+        </div>
+    	<div class="xskq_navs" style=" padding:16px 50px;">
+        
+        
+        <div class="qkysel mb16 fl tab">
+            <div class="seltxt fl  co_gr fz_16">选择考勤日期：</div>
+            <div class="selshow fl XL inp hicon">
+                <input type="text"  class="caldate fz_18" id="oneday">
+                <a class="timeicon"><i class="appicon">&#xe607;</i></a>
+                <div class="qky_calendar"></div>
+            </div>
+            <div class="clear"></div>   
+        </div>
+        
+        <div class="qkysel mb16 fl tab yc">
+            <div class="seltxt fl  co_gr fz_16">考勤周期：</div>
+            <div class="selshow fl XL">
+                <a class="selectON dian3 fz_18 t_c" id="ks_type">第一周</a>
+                <div class="optionbox">
+                    <a class="option trn dian3" value="第一周">第一周</a>
+                    <a class="option trn dian3" value="第二周">第二周</a>
+                    <a class="option trn dian3" value="第三周">第三周</a>
+                    <a class="option trn dian3" value="第四周">第四周</a>
+                    <a class="option trn dian3" value="第五周">第五周</a>
+                </div>
+            </div>
+            <div class="clear"></div>   
+        </div>
+        
+        <div class="qkysel mb16 fl tab yc">
+            <div class="seltxt fl  co_gr fz_16">考勤月份：</div>
+            <div class="selshow fl XL">
+                <a class="selectON dian3 fz_18 t_c" id="ks_type">一月份</a>
+                <div class="optionbox">
+                    <a class="option trn dian3" value="一月份">一月份</a>
+                    <a class="option trn dian3" value="二月份">二月份</a>
+                    <a class="option trn dian3" value="三月份">三月份</a>
+                    <a class="option trn dian3" value="四月份">四月份</a>
+                    <a class="option trn dian3" value="五月份">五月份</a>
+                </div>
+            </div>
+            <div class="clear"></div>   
+        </div>
+        
+        <div class="qkysel mb16 fl tab yc">
+            <div class="seltxt fl  co_gr fz_16">考勤学期：</div>
+            <div class="selshow fl XL">
+                <a class="selectON dian3 fz_18 t_c" id="ks_type">2016年第一学期</a>
+                <div class="optionbox">
+                    <a class="option trn dian3" value="2016年第一学期">2016年第一学期</a>
+                    <a class="option trn dian3" value="2016年第二学期">2016年第二学期</a>
+                    <a class="option trn dian3" value="2017年第一学期">2017年第一学期</a>
+                    <a class="option trn dian3" value="2017年第二学期">2017年第二学期</a>
+                    <a class="option trn dian3" value="2018年第一学期">2018年第一学期</a>
+                </div>
+            </div>
+            <div class="clear"></div>   
+        </div>
+        <div class="qkyinp mb16 M fr">
+            <div class="fl inptext"><input type="text" placeholder="请输入教师姓名" class="wd_96 ml10"></div>
+            <div class="fl inpbut"><a><i class="appicon co_gr">&#xe60c;</i></a></div>
+            <div class="clear"></div>
+        </div>
+        
+        
+       
+         <table cellpadding="0" cellspacing="0" border="0"  class="qkytable qian_color">
+                <tr><th>编号</th><th>姓名</th><th >迟到</th><th>请假</th><th>早退</th><th>旷课</th></tr>
+                <tr><td class="one">1</td><td>蔡勇剑</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr class="even"><td class="one">2</td><td>陈启</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="one">3</td><td>陈艳妮</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr class="even"><td class="one">4</td><td>桂莹</td><td>1</td><td>1</td><td>3</td><td>1</td></tr>
+                <tr><td class="one">5</td><td>黄慧芳</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr class="even"><td class="one">6</td><td>关瑞荣</td><td>2</td><td>2</td><td>2</td><td>0</td></tr>
+                <tr><td class="one">7</td><td>万洪泉</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr class="even"><td class="one">8</td><td>王霖</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="one">9</td><td>王转转</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr class="even"><td class="one">10</td><td>谢帅</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td class="one">11</td><td>杨洪彩</td><td>2</td><td>2</td><td>2</td><td>0</td></tr>
+                <tr class="even"><td class="one">12</td><td>吴泳芝</td><td>1</td><td>3</td><td>1</td><td>0</td></tr>
+                <tr><td class="one">13</td><td>杨鹏</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr class="even"><td class="one">总计</td><td>总结</td><td>20</td><td>13</td><td>15</td><td>6</td></tr>
+				</table>
+           <div class="qkypage mt16">
+                <a href="#" class="no">上一页</a>
+                <a href="#" class="cur">1</a>
+                <a href="#" class="no">下一页</a>
+           	</div>
+        </div>   
+    </div>
+</div>
+
+<!--底部-->
+<div class="qky_footer">
+<div>广东全通教育股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+
+
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+
+<script>
+$(function() {
+	qkysel();
+	/*日历启动（ 点击的元素id/class，容器元素id/class，是否默认给当天日期值0/1【默认不显示】，是否显示时分下拉选项0/1【默认显示】,是否让过去的天数显示正常0/1【默认正常显示】）*/
+	calendar(".timeicon",".qky_calendar",1,0,1);
+	$(".adminbiao a").each(function(i) {
+        $(this).click(function(){
+		 $(".tab.qkysel").addClass("yc");
+		 $(this).addClass("cur").siblings().removeClass("cur");
+		 $(".tab.qkysel").eq(i).removeClass("yc");
+		});
+    });
+});
+
+
+
+</script>
+</body>
+</html>

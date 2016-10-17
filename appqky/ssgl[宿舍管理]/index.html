@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>宿舍管理——基础设置</title>
+<!--框架css-->
+<link href="css/common_2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui.css" rel="stylesheet" type="text/css"/>
+<!--附加css-->
+
+<link href="css/ssgl.css" rel="stylesheet" type="text/css"/>
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/user_public.js"></script>
+<!--插件js-->
+</head>
+<body>
+
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">张三 教师</a><a href="#">安全退出</a><a href="#">设置</a></div>
+            <div class="qky_top_button"><a href="#"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header1">
+        <div class="qky_top_box">
+            <ul class="qky_top_navs"><li><a class="cur" href="index.html">基础设置</a></li><li><a href="index_kaoqin.html">宿舍考勤</a></li><li><a href="index_richang.html">日常登记</a></li></ul>
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe69c;</i>帮助</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe61d;</i>全课云APP</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon fz_4">&#xe616;</i></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+
+	<div class="qky_nav">
+    	<div class="qkynav_main">
+        <a class="nav_sg fl cur" href="index.html"><i class="qkyicon">&#xe72c;</i>宿舍信息设置</a>
+        <a class="nav_sg fl" href="index_indata.html"><i class="qkyicon">&#xe6af;</i>宿舍信息录入</a>
+        <a class="nav_sg fl" href="index_jiangchen.html"><i class="qkyicon">&#xe6ed;</i>奖惩类别设置</a>
+        <a class="nav_sg fl" href="index_kaopin.html"><i class="qkyicon">&#xe6ed;</i>考评类别设置</a>
+        <div class="fl seabox"><label>搜索</label><input type="text" name="search"><div class="clear"></div></div>
+        <a class="addLou fr" onClick="popIn('#addLou')"><i class="qkyicon">&#xe6dc;</i>增加宿舍楼</a>
+        <div class="clear"></div>
+        </div>
+    </div>
+    <div class="qky_main">
+		<div class="ssgl_lou_box">
+        	<div class="clear" id="joinbefor"></div>
+            <!--没数据的时候请显示这个层-->
+            <div class="nodata">
+            	<div class="list_tx"><i class="qkyicon">&#xe74b;</i></div>
+                <div class="list_tit">暂时没有宿舍楼</div>
+            </div>
+            <!--没数据的时候请显示这个层-->
+            <div class="qkypage">
+                <a href="#" class="no">上一页</a>
+                <a href="#" class="cur">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                ...
+                <a href="#">12</a>
+                <a href="#">下一页</a>
+           	</div>
+        </div>
+        
+        <div class="ssgl_inlou_box">
+        	<div class="inlou_left fl">
+            	<div class="inlouL_up">
+                	<a class="pba back"><i class="qkyicon">&#xe68c;</i></a>
+                	<div class="list_tx"><i class="qkyicon">&#xe74b;</i></div>
+                    <div class="list_tit inlouTit"></div>
+                </div>
+                <div class="gd"><img src="images/listgd.png"></div>
+                <div class="inlouL_down"></div>
+            </div>
+            <div class="inlou_right fr">
+            	
+                <div class="fangrq">
+                    <div class="fl fll">
+                    	<div class="sushe"></div>
+                        <div class="inlouR_list_ban fl fadd"><i class="qkyicon">&#xe69e;</i></div>
+                        <div class="inlouR_list_ban fr fjian"><i class="qkyicon">&#xe6c5;</i></div>
+                    </div>
+                    <div class="fr frr">
+                    	<div class="sushe"></div>
+                    	<!--<div class="inlouR_list_ban shi fl save">保存</div>
+            			<div class="inlouR_list_ban shi fr cancel">取消</div>-->
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="qky_maskbox" id="del">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian">
+        <div class="qky_masktit">删除<a class="maskclose" onClick="popOut('#del')"><i class="qkyicon">&#xe6aa;</i></a></div>
+        <div class="qky_maskcont">
+        <span class="sigtext">是否删除该条记录？</span>
+        </div>
+        <div class="qky_maskbuts">
+            <a class="maskBut fl one">确定</a>
+            <a class="maskBut fl" onClick="popOut('#del')">取消</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div class="qky_maskbox" id="addLou">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian L">
+        <div class="qky_masktit">添加宿舍楼<a class="maskclose" onClick="popOut('#addLou')"><i class="qkyicon">&#xe6aa;</i></a></div>
+        <div class="qky_maskcont">
+            <div class="list_tx"><i class="qkyicon">&#xe74b;</i></div>
+            <div class="list_tit "><label>宿舍楼名：</label><input type="text" value="男生宿舍楼A1栋"  id="louname" class="addinput"></div>
+            <div class="downlist ceng fl">
+            <div class="txtone"><input type="text" value="5"  id="cengnum" class="addinput"  onkeyup='this.value=this.value.replace(/\D/gi,"")'></div>
+            <div class="txttwo"><i class="qkyicon">&#xe74d;</i></div>
+            <div class="txtthree">层数</div>
+            </div>
+            <div class="downlist fang fl">
+            <div class="txtone"><input type="text" value="6"  id="fangnum" class="addinput"  onkeyup='this.value=this.value.replace(/\D/gi,"")'></div>
+            <div class="txttwo"><i class="qkyicon">&#xe753;</i></div>
+            <div class="txtthree">每层宿舍数</div>
+            </div>
+            <div class="downlist chuang fl">
+            <div class="txtone"><input type="text" value="8"  id="chuangnum" class="addinput"  onkeyup='this.value=this.value.replace(/\D/gi,"")'></div>
+            <div class="txttwo"><i class="qkyicon">&#xe73b;</i></div>
+            <div class="txtthree">每宿舍床数</div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="qky_maskbuts">
+            <a class="maskBut fl one" onClick="listAdd()">提交</a>
+            <a class="maskBut fl" onClick="popOut('#addLou')">取消</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="qky_footer">
+<div>广东全通教育股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+<!--楼列表模板-->
+<div id="Loulist_mould" class="yc">
+<div class="ssgl_lou_list fl " isplay="yes">
+            	<div class="list_up">
+                	<a class="pba edit"><i class="qkyicon">&#xe6cf;</i></a>
+                    <a class="pba close"><i class="qkyicon">&#xe6aa;</i></a>
+                	<div class="list_tx"><i class="qkyicon">&#xe74b;</i></div>
+                    <div class="list_tit louname_s"></div>
+                </div>
+                <div class="gd "><img src="images/listgd.png"></div>
+                <div class="list_down">
+                	<div class="downlist ceng fl">
+                        <div class="txtone cengcount"></div>
+                        <div class="txttwo"><i class="qkyicon">&#xe74d;</i></div>
+                        <div class="txtthree">总层数</div>
+                    </div>
+                    <div class="downlist fang fl">
+                    	<div class="txtone fangcount"></div>
+                        <div class="txttwo"><i class="qkyicon">&#xe753;</i></div>
+                        <div class="txtthree">总宿舍数</div>
+                    </div>
+                    <div class="downlist chuang fl">
+                    	<div class="txtone chuangcount"></div>
+                        <div class="txttwo"><i class="qkyicon">&#xe73b;</i></div>
+                        <div class="txtthree">总床位数</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+</div>
+
+<!--宿舍房模板-->
+<div class="yc" id="fanglist_mould">
+    <div class="inlouR_list fl">
+        <div class="fl fangN">
+            <div class="txtone">101</div>
+            <div class="txttwo"><i class="qkyicon">&#xe753;</i></div>
+            <div class="txtthree">宿舍</div>
+        </div>
+        <div class="fl chuangbox">
+            <div class="chuangrq"></div>
+            <a class="fl add"><i class="qkyicon">&#xe69e;</i></a>
+            <a class="fl jian"><i class="qkyicon">&#xe6c5;</i></a>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <span class="ss_close"><img src="images/chuangclose.png"></span>
+    </div>
+</div>
+
+<!--床位模板-->
+<div class="yc" id="chuanglist_mould01">
+	<a class="chuanglist fl"><i class="qkyicon">&#xe73b;</i><b>01</b><span><img src="images/chuangclose.png"></span></a>
+</div>
+<div class="yc" id="chuanglist_mould02">
+	<a class="chuanglist fl">
+        <i class="qkyicon">&#xe73b;</i>
+        <input type="text" value="09"  id="chuangnum" class="addinput chuangin"  onkeyup="this.value=this.value.replace(/\D/gi,"")">
+        <span><img src="images/chuangclose.png"></span>
+    </a>
+</div>
+
+<!--楼层模板-->
+<div class="yc" id="cenglist_mould">
+<a class="trn"><i class="qkyicon">&#xe74e;</i><b>1F</b></a>
+</div>
+<script>
+
+var louData=[
+["男生宿舍楼A1","5","6","6"],
+["男生宿舍楼A2","7","4","4"],
+["男生宿舍楼A3","10","8","2"],
+["男生宿舍楼A4","8","6","8"],
+["男生宿舍楼A5","6","4","2"],
+["男生宿舍楼A6","9","4","4"]
+];//数据类型说明，楼名，层数，每层宿舍数，每宿舍床位数
+
+var louname,cengnum,fangnum, chuangnum;
+$(function(){
+	Xrloulist(louData);
+	
+});
+
+</script>
+</body>
+</html>

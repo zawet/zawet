@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>教职工_筛选</title>
+<!--框架css-->
+<link  href="css/animate.css" rel="stylesheet" type="text/css"/><!--css3 动画库-->
+<link href="css/common_h5.css" rel="stylesheet" type="text/css"/><!--公共css-->
+<link href="css/qkyui2.0.css" rel="stylesheet" type="text/css"/><!--ui控件css-->
+<link href="css/qkyuih5_theme_jzgda.css" rel="stylesheet" type="text/css"/><!--ui控件主题颜色风格css-->
+<!--附加css-->
+<link href="css/jzgda.css" rel="stylesheet" type="text/css"/>
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bil/jqui1.11.4/jquery-ui.min.js" ></script>
+<script language="JavaScript" charset="utf-8" src="js/qky_h5ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/qkyui_cal.js"></script>
+<!--插件js-->
+
+</head>
+<body class="qkybody h100 po_ab wd_100">
+
+<!--头部标准，一般固定-->
+<div class="qkyh5_header">
+    <div class="qkyh5_topbox ub ub-ac ba_top co_ff pa_lr16">
+        <a class="iskuai wd_20 co_ff" href="index_teada.html"><i class="qkyicon fz_24">&#xe68b;</i></a>
+        <div class="ub-f1 fz_20 fz_we t_c pa_tb12">筛选</div>
+        <div class="wd_20"></div>
+    </div>
+</div>
+
+<!--中部标准，一般放列表-->
+<div class="qkyh5_main ub h100 box_b">
+	<div class="main_l h100 wd_30 br_r br_ddd">
+        <a class="tyle_li trn cur">所在部门</a>
+        <a class="tyle_li trn">岗位类别</a>
+        <a class="tyle_li trn">政治面貌</a>
+        <a class="tyle_li trn">最高学历</a>
+    </div>
+    <div class="main_r h100 socrllbox wd_70 ba_ff">
+    <a class="zuzhi_li trn cur">不限</a>
+    <a class="zuzhi_li trn">校长室</a>
+    <a class="zuzhi_li trn">行政处</a>
+    <a class="zuzhi_li trn">教务处</a>
+    <a class="zuzhi_li trn">财务处</a>
+    <a class="zuzhi_li trn">后勤处</a>
+    <a class="zuzhi_li trn">教学组</a>
+    <a class="zuzhi_li trn">语文组</a>
+    <a class="zuzhi_li trn">英语组</a>
+    <a class="zuzhi_li trn">校长室</a>
+    <a class="zuzhi_li trn">行政处</a>
+    <a class="zuzhi_li trn">教务处</a>
+    <a class="zuzhi_li trn">财务处</a>
+    <a class="zuzhi_li trn">后勤处</a>
+    <a class="zuzhi_li trn">教学组</a>
+    <a class="zuzhi_li trn">语文组</a>
+    <a class="zuzhi_li trn">英语组</a>
+    </div>
+</div>
+
+<!--底部浮动按钮--> 
+<div class="qkyh5_footbg br_t br_ddd ba_ff">
+    <ul class="footer ub ub-ac t_c">
+    	<li class="ub-f1 fz_18 mr16 brra_6"><a href="index_sx.html" class="co_ff iskuai">恢复默认</a></li>
+        <li class="ub-f3 fz_18 brra_6"><a  href="index_teada.html" class="co_ff iskuai"><i class="appicon fz_22">&#xe60f;</i>确认</a></li>
+    </ul>
+</div>
+
+<script>
+$(function(){
+	qkyh5_topa_header(0,1);
+	$(".tyle_li").each(function(i) {
+        $(this).click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur");
+		});
+    });
+	$(".zuzhi_li").each(function(i) {
+        $(this).click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur");
+		});
+    });
+})
+
+</script>
+</body>
+</html>

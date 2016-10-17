@@ -1,0 +1,52 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1470964160'); /* IE9*/
+  src: url('iconfont.eot?t=1470964160#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1470964160') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1470964160') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1470964160#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-bianji:before { content: "\e60a"; }
+.icon-gengduo:before { content: "\e60d"; }
+.icon-sousuo:before { content: "\e609"; }
+.icon-ordinarydownload:before { content: "\e61a"; }
+.icon-icon42:before { content: "\e602"; }
+.icon-liuyanicon:before { content: "\e61e"; }
+.icon-lianxiren:before { content: "\e603"; }
+.icon-danchucengzhuanhuan:before { content: "\e620"; }
+.icon-del:before { content: "\e61d"; }
+.icon-shezhi:before { content: "\e605"; }
+.icon-xiaolvdashitubiao33301:before { content: "\e61c"; }
+.icon-fanhui:before { content: "\e619"; }
+.icon-pinpai:before { content: "\e61f"; }
+.icon-iconfontjpg2:before { content: "\e60e"; }
+.icon-liuyan:before { content: "\e614"; }
+.icon-shanchu:before { content: "\e622"; }
+.icon-exl:before { content: "\e60f"; }
+.icon-jiaoshitongji:before { content: "\e601"; }
+.icon-jiaru:before { content: "\e60c"; }
+.icon-queding:before { content: "\e621"; }
+.icon-ziyuan1:before { content: "\e604"; }
+.icon-ppt:before { content: "\e610"; }
+.icon-chengyuan:before { content: "\e617"; }
+.icon-tijiao:before { content: "\e61b"; }
+.icon-zhuye:before { content: "\e606"; }
+.icon-jianjie:before { content: "\e60b"; }
+.icon-qianjin:before { content: "\e616"; }
+.icon-xin:before { content: "\e600"; }
+.icon-taolun:before { content: "\e618"; }
+.icon-guanzhu:before { content: "\e607"; }
+.icon-zhuyi:before { content: "\e615"; }
+.icon-swf:before { content: "\e611"; }
+.icon-weibiaoti1fuzhi01:before { content: "\e608"; }
+.icon-jpg:before { content: "\e612"; }
+.icon-word:before { content: "\e613"; }

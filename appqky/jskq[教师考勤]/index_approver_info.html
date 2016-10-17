@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>教师考勤—审批人详细页</title>
+<link href="css/jskq.css" rel="stylesheet" type="text/css"/>
+<!--框架css-->
+<link href="css/common_2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui.css" rel="stylesheet" type="text/css"/>
+
+
+<!--公共js-->
+<script src="bil/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="bil/jqui1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box clear3">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">关瑞荣 教师</a></div>
+            <div class="qky_top_button yc"><a href="#" class="trn"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+        </div>
+    </div>
+    <div class="header1" style=" height:48px;">
+        <div class="qky_top_box clear3">
+            <ul class="qky_top_navs">
+            <li><a href="index_teach.html">教师考勤 > 审批</a></li>
+            
+            </ul>
+            <!--<div class="qky_tab fr w_co"><i class="qkyicon ">&#xe69c;</i>帮助</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe61d;</i>全课云APP</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon fz_4">&#xe616;</i></div>-->
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+    <div class="qky_main clear3">
+    	
+        <div class="main_bg  pt0">
+        	<div class="jskq_title clear3">
+                <a class="jskq_tita fl"><i class="appicon fz_28 mr6">&#xe603;</i><span>教师考勤</span></a>
+                <a class="qkybut hbg zi min_cbut brad4 L fz_18 fr mr16 mt10" href="index_approver.html"><i class="appicon mr6 fz_20">&#xe617;</i>返回</a>
+            </div>
+            <div class="splc_showbox">
+                <div class="fl sp_titimg"><img src="images/splc.png"></div><div class="sp_line fr"></div><div class="clear"></div>
+                <div class="splc_bzbox">
+                    <table cellpadding="0" cellspacing="0" border="0" class="splc_tab mt10">
+                        <tr>
+                            <td class="tou"><div class="yuanzi fl">1</div><div class="fl lc_cont"><span>请假天数≤1天</span><label>科组长</label></div></td>
+                            <td><div class="yuanzi fl">2</div><div class="fl lc_cont"><span>请假天数≤2天</span><label>科组长→年级主任</label></div></td>
+                            <td><div class="yuanzi fl">3</div><div class="fl lc_cont"><span>请假天数≤3天</span><label>科组长→年级主任→分管副校长</label></div></td>
+                            <td><div class="yuanzi fl">4</div><div class="fl lc_cont"><span>请假天数≤3天</span><label>科组长→年级主任→分管副校长→校长</label></div></td>
+                            <td class="wei"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="main_bg mt10  wd_70 pt0 box_b fl">
+        	<div class="jskq_title clear3">
+                <a class="jskq_tita fl"><i class="appicon fz_28 mr6">&#xe611;</i><span>假条批复</span></a>
+            </div>
+            <table cellpadding="0" cellspacing="0" border="0" class="info_tab wd_90">
+            	<tr><td class="fz_16 co_gr one">请假人：</td><td class="fz_16 co_89">蔡勇剑</td></tr>
+                <tr><td class="fz_16 co_gr one">任课科目：</td><td class="fz_16 co_89">历史</td></tr>
+                <tr><td class="fz_16 co_gr one">任课班级：</td><td class="fz_16 co_89">高一（7）班</td></tr>
+                <tr><td class="fz_16 co_gr one">请假原因：</td><td class="fz_16 co_89">事假</td></tr>
+                <tr><td class="fz_16 co_gr one">请假时间：</td>
+                <td class="fz_16 co_89"><i class="appicon mr6 ml6 co_gr2 fz_24">&#xe624;</i>2016-7-8 8：30：00 <i class="appicon mr6 ml6 co_zi2 fz_24">&#xe623;</i>2016-7-11 8：30：00</td>
+                </tr>
+                <tr><td class="fz_16 co_gr one">请假天数：</td><td class="fz_16 co_89">3天，共24节课</td></tr>
+                <tr><td class="fz_16 co_gr one">上一步审批人：</td><td class="fz_16 co_89">杨鹏</td></tr>
+            </table>
+            <div class="t_c mb16">
+            <a class="qkybut hbg min_cbut brad4 L  mr26 fz_16"  onClick="popIn('#next')"><i class="qkyicon mr6 fz_20">&#xe675;</i>下一步</a>
+            <a class="qkybut hbg min_cbut brad4 L  ml26 fz_16"><i class="appicon mr6 fz_20">&#xe61b;</i>回退申请人</a>
+        	</div>   
+        </div>
+        <div class="main_bg mt10  wd_29 box_b fr pt0 pb10">
+        	<div class="qjlcbox">
+               <div class="qjlc_title"><img src="images/qjlc_title.png"></div>
+               <table cellpadding="0" cellspacing="0" border="0" class="qjlc_tab">
+               	<tr><td class="one" valign="top"><a>1</a></td><td width="76%"><label>2016-7-8 <em>8：30：12</em></label><span>您发起请假申请</span></td></tr>
+                <tr><td class="one" valign="top"><a>2</a></td><td width="76%"><label>2016-7-8<em>10：20：41</em></label><span>王霖老师确认您的假条，并转交谢帅老师审批。</span></td></tr>
+                <tr><td class="one" valign="top"><a>3</a></td><td width="76%"><label>2016-7-8<em>10：40：15</em></label><span>谢帅老师确认您的假条，并转交杨鹏老师审批。</span></td></tr>
+                <tr><td class="one nb" valign="top"><i class="appicon fz_40 co_gr2">&#xe602;</i></td><td width="76%"><label>2016-7-8<em>11：30：00</em></label><span>杨鹏老师同意您的请假申请</span></td></tr>
+               </table>
+            </div>
+        </div>
+        
+   </div>
+</div>
+
+<!--底部-->
+<div class="qky_footer">
+<div>广东全通教育股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+<!--弹窗---------------------------------->
+<!--下一步-->
+<div class="qky_maskbox" id="next">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XXL">
+    	<div class="qky_masktit">下一步<a class="maskclose" onClick="popOut('#next')"><i class="appicon">&#xe60a;</i></a></div>
+        <div class="qky_maskcont pt16 pb16 pa_lr16">
+        	
+                <div class="kqmb_lbox fl t_c">
+                   <div class="bigtisp t_c wd_50">
+                       <i class="appicon">&#xe610;</i>
+                       <div class="wd_100 t_l co_gr">如果您是该请假流程的最后审批人，请点击下方的”同意请假”按钮，否则请在右边选择下一步审批人姓名.</div>
+                   </div>     
+                   <a class="qkybut hbg brad4 M" ><i class="appicon mr6">&#xe609;</i>同意请假</a> 
+                </div>
+                <div class="kqmb_rbox fl br_ddd">
+                	<div class="next_title">下一步 审批人</div>
+                	<div class="qkyinp wd_90 ma_lrauto clear3 mt6 mb6">
+                	<div class="fl inptext"><input type="text" placeholder="查找审批人" class="wd_96 ml10"></div><div class="fl inpbut"><a><i class="appicon">&#xe60c;</i></a></div>
+                	</div>
+                    <div class="scrollbox">
+                        <label>最近审批人<a class="fr co_bl clear_zj" style="text-decoration:underline">清空</a></label>
+                        <ul class="zj_spr">
+                        <li class="trn">关瑞荣</li>
+                        <li class="trn">杨鹏</li>
+                        <li class="trn">谢帅</li>
+                        <li class="trn">王霖</li>
+                        </ul>
+                        <label>所有审批人</label>
+                        <ul>
+                        <li class="trn">关瑞荣</li>
+                        <li class="trn">杨鹏</li>
+                        <li class="trn">谢帅</li>
+                        <li class="trn">王霖</li>
+                       
+                        </ul>
+                    </div>
+                </div> 
+        <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/xskq.js"></script>
+<script>
+
+
+
+$(function() {
+	qkybut_lt();
+	$(".xskq_list").each(function(i) {
+        $(this).find(".list_ul").click(function(){
+			 window.location.href="index_approver_info.html"; 
+		});
+    });
+	scrollbox_a("#spr");
+});
+
+function scrollbox_a(tovalue){
+	$(".scrollbox li").each(function(i) {
+        $(this).click(function(){
+			var val=$(this).html();
+			$(this).addClass("cur").siblings().removeClass("cur");
+			$(tovalue).val(val);
+		});
+    });
+	$(".clear_zj").click(function(){
+		$(".zj_spr li").remove();
+	});
+}
+
+</script>
+</body>
+</html>

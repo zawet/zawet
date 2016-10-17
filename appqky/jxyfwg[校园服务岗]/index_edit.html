@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>校园服务岗_修改服务岗</title>
+<!--附加css-->
+<link href="css/xyfwg.css" rel="stylesheet" type="text/css"/>
+<!--框架css-->
+<link href="css/common_3.2.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui_theme_xyfwg.css" rel="stylesheet" type="text/css"/>
+
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bil/jqui1.11.4/jquery-ui.min.js" ></script>
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/qkyui_cal.js"></script>
+<!--插件js-->
+</head>
+<body>
+
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">张三 教师</a></div>
+            <div class="qky_top_button"><a href="#"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header1">
+        <div class="qky_top_box">
+        <ul class="qky_top_navs">
+            <li><a href="index.html" class=" fz_16 cur"><i class="qkyicon mr6">&#xe6cf;</i>服务岗管理</a></li>
+            <li><a href="index_tj.html" class=" fz_16"><i class="qkyicon mr6">&#xe6c9;</i>服务岗统计</a></li>
+            </ul>
+           	
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+	<div class="qky_main clear3">    
+    	<div class="qkynav_zu clear3">
+            <a class="trn" href="index.html"><i class="appicon mr6">&#xe607;</i>报名中</a>
+            <a class="trn" href="index_ing.html"><i class="appicon mr6">&#xe606;</i>执勤中</a>
+            <a class="trn" href="index_end.html"><i class="appicon mr6">&#xe605;</i>已结束</a>
+
+        </div>	
+        <div class="main_bg">
+        	<div class="wd_100 po_r t_c mb16">
+                <span class="fz_24 co_gr fz_we lh34 isk_l">修改服务岗</span>
+                <a class="qkybut fhbg brra_4 wd_10 iskuai po_ab_r" href="index.html"><i class="qkyicon mr6">&#xe68a;</i>返回</a>
+            </div>
+            <div class="wd_60 ma_lrauto">
+                <div class="qkysel mb12 clear3">
+                    <div class="seltxt fl wd_26 t_r fz_16 co_sbl"><i class="appicon mr4 co_ye fz_14">&#xe60c;</i>服务岗名称：</div>
+                    <div class="selshow fl inp wd_68 br_nall ba_f6"><input type="text" value="周末图书馆图书整理"></div>
+                </div>
+                <div class="qkysel mb12 clear3">
+                    <div class="seltxt fl wd_26 t_r fz_16 co_sbl"><i class="appicon mr4 co_ye fz_14">&#xe60c;</i>服务岗地点：</div>
+                    <div class="selshow fl inp wd_68 br_nall ba_f6"><input type="text" value="学校图书馆"></div>
+                </div>
+                <div class="qkysel mb12 clear3">
+                    <div class="seltxt fl wd_26 t_r fz_16 co_sbl"><i class="appicon mr4 co_ye fz_14">&#xe60c;</i>服务人数：</div>
+                    <div class="selshow fl inp wd_68 br_nall ba_f6 hicon">
+                        <input type="text" class="u_d_sel" maxlength="4" value="05"  onkeyup='this.value=this.value.replace(/\D/gi,"")'>
+                        <a class="u_d" up_down="0_100"><i class="qkyicon up">&#xe6a5;</i><i class="qkyicon down">&#xe66f;</i></a>
+                     </div>
+                </div>
+                <div class="qkysel mb12 clear3">
+                    <div class="seltxt fl wd_26 t_r fz_16 co_sbl"><i class="appicon mr4 co_ye fz_14">&#xe60c;</i>服务时间段：</div>
+                    <span class="fl ma_lr8">从</span><div class="selshow fl inp wd_62 hicon datetime br_nall ba_f6"><input type="text"  class="caldate"  value="2016-09-09 08:00"></div>
+                    <div class="clear"></div>
+                    <div class="seltxt fl wd_26 mt10"></div>
+                    <span class="fl ma_lr8 mt10">到</span><div class="selshow fl mt10 inp wd_62 hicon datetime br_nall ba_f6">
+                    <input type="text"  class="caldate" value="2016-09-09 08:00"></div>
+                </div>
+                <div class="qkysel clear3">
+                <div class="seltxt fl  fz_16 co_sbl wd_26 t_r"><i class="appicon mr4 co_ye fz_14">&#xe60c;</i>服务岗描述/责任介绍：</div>
+                <div class="selshow fl inp text  br_nall ba_f6 wd_68">
+                <textarea>
+1.协助图书管理员对图书进行分类归档
+2.核对相应书籍编号
+3.打扫图书馆
+                </textarea>
+                </div>
+                <div class="clear"></div>
+                <span class="co_gr fz_14  iskuai t_r pr16">（字数不超200字）</span>
+            	</div>
+                <div class="qkysel mb12 clear3">
+                    <div class="seltxt fl wd_26 t_r fz_16 co_sbl">服务岗照片：</div>
+                    <div class="upphoto po_r t_c fl box_b">
+                        <img src="images/inup.png" class="wd_100">
+                        <span class="t_c iskuai gh">点击更换</span>
+                        <input type="file" class="ycfile">
+                    </div>
+                </div>
+                <div class="t_c mt26 mb12">
+                <a class="qkybut hbg brad4 M  min_cbut mr26 fz_18" onClick="popIn('#add_su')"><i class="appicon mr6">&#xe609;</i>保存</a>
+                <a class="qkybut hbg brad4 M  min_cbut  ml26 fz_18" ><i class="appicon mr6">&#xe60a;</i>取消</a>
+                </div>
+                
+            </div>
+                      
+		</div>
+        
+    </div>   
+</div>
+<!--底部-->
+<div class="qky_footer">
+<div>全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+<!--弹窗---------------------------------->
+
+
+<!--删除提示-->
+<div class="qky_maskbox" id="add_su" >
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian L">
+        <div class="qky_masktit"><span id="titname">提示信息</span><a class="maskclose" onClick="popOut('#add_su')"><i class="qkyicon">&#xe6aa;</i></a></div>
+        <div class="qky_maskcont pa_lr16 pt16">
+        	<i class="appicon co_c3" id="msgicon">&#xe609;</i>
+        	<div class="" id="msgtxt">修改服务岗成功！</div>
+        	<div class="t_c mb26">
+            <a class="qkybut hbg brad4 M" onClick="popOut('#add_su')"><i class="appicon mr6">&#xe609;</i>确定</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+$(function(){
+	qkysel();
+	qkyu_d();
+	$(".datetime").calendar();
+	
+});
+
+
+</script>
+
+</body>
+</html>

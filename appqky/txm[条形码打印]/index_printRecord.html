@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>条码编辑添加</title>
+<!--框架css-->
+<link href="bil/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+<link href="css/common_2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui.css" rel="stylesheet" type="text/css"/>
+<link href="css/txm.css" rel="stylesheet" type="text/css"/>
+
+<script src="bil/jquery-ui-1.11.4.custom/external/jquery/jquery.js" type="text/javascript"></script>
+<script src="bil/jquery-ui-1.11.4.custom/jquery-ui.js" type="text/javascript"></script>
+
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/user_public.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/txm.js"></script>
+</head>
+
+<body>
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">张三 教师</a></div>
+            <div class="qky_top_button"><a href="#"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header1">
+        <div class="qky_top_box">
+            <ul class="qky_top_navs"><li><a   href="index_print.html">条码打印</a></li><li><a class="cur" href="index_fillprint.html">条码补打</a></li><li><a href="index.html" >初始化设置</a></li></ul>
+            
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+    <div class="qky_main">
+    
+    	<div class="tmprint_box ">
+             <div class="tm_tit ma_lrauto"><a class="qkybut hbg brad4 M" href="index_fillprint.html" style="left:16px; top:16px; right:auto; padding-bottom:0;"><i class="qkyicon fz_1 mr6">&#xe6ea;</i>返回</a><span style="line-height:34px; height:34px;">条码补打记录</span></div>   
+                <div class="pa_lr16">
+                <div class="qkysel mt16 fl wd_20 ">
+                        <div class="seltxt fl">班级选择：</div>
+                        <div class="selshow fl auto wd_60" >
+                        	<a class="selectON dian3" id="ks_type">年级</a>
+                            <div class="optionbox">
+                                <a class="option trn dian3" value="初一">初一</a>
+                                <a class="option trn dian3" value="初二">初二</a>
+                                <a class="option trn dian3" value="初三">初三</a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                </div>
+                <div class="qkysel mt16 fl mr16 ml6" style="width:12%;">
+                	<div class="selshow  auto wd_100">
+                        	<a class="selectON dian3" id="ks_type">班级</a>
+                            <div class="optionbox">
+                                <a class="option trn dian3" value="（1）班">（1）班</a>
+                                <a class="option trn dian3" value="（2）班">（2）班</a>
+                                <a class="option trn dian3" value="（3）班">（3）班</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="qkysel fl mt16 wd_30  ml16">
+                    <div class="seltxt fl">姓名学号：</div>
+                     <div class="selshow fr auto inp wd_70"><input type="text" value="" placeholder="输入姓名/学号"></div><div class="clear"></div>
+                </div>
+                <div class="qkysel fr mt16 wd_30 yc">
+                    <div class="seltxt fl">卡号：</div>
+                     <div class="selshow fr auto inp wd_80"><input type="text" value="" placeholder="输入卡号"></div><div class="clear"></div>
+                </div>
+                <div class="qkysel ma_lrauto  mt16 fr wd_30">
+                        <div class="seltxt fl">补卡类型：</div>
+                        <div class="selshow fr auto wd_70">
+                        	<a class="selectON dian3" id="ks_type">请选择</a>
+                            <div class="optionbox">
+                                <a class="option trn dian3" value="新增">新增</a>
+                                <a class="option trn dian3" value="补打">补打</a>
+                                
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                </div>
+                <div class="qkysel  fl wd_20">
+                        <div class="seltxt fl">补卡时间：</div>
+                        <div class="selshow fl auto wd_60 inp hicon"><input type="text"  class="caldate" id="stime"><a class="timeicon"><i class="qkyicon">&#xe709;</i></a>
+                        <div class="qky_calendar"></div></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="qkysel fl ml6 mr16" style="width:12%;">
+                        <div class="selshow fl auto inp wd_100 hicon"><input type="text"  class="caldate" id="etime"><a class="timeicon"><i class="qkyicon">&#xe709;</i></a>
+                        <div class="qky_calendar"></div></div>
+                        <div class="clear"></div>
+                    </div>
+                
+                <div class="t_c fr"><a class="qkybut hbg  L brad4" >查询</a></div>
+                <div class="clear"></div>
+                
+                <!--表格列表主体-->
+            <div class="txmtable">
+            <table cellpadding="0" cellspacing="0" border="0"  class="intable">
+                <tr>
+                    </th><th >班级</th><th>学生姓名</th><th >学号</th><th>卡号</th><th>补卡类型</th><th>补卡时间</th>
+                </tr>
+                <tr><td class="one">初一（1）班</td><td>王辰</td><td>201501001</td><td>1234567</td><td>新增</td><td>2016-6-28</td></tr>
+                <tr class="even"><td class="one">初一（1）班</td><td>王辰</td><td>201501003</td><td>1234567</td><td>补打</td><td>2016-6-28</td></tr>
+                <tr><td class="one">初一（1）班</td><td>王辰</td><td>201501001</td><td>1234567</td><td>新增</td><td>2016-6-28</td></tr>
+                <tr class="even"><td class="one">初一（1）班</td><td>王辰</td><td>201501003</td><td>1234567</td><td>补打</td><td>2016-6-28</td></tr>
+                <tr><td class="one">初一（1）班</td><td>王辰</td><td>201501001</td><td>1234567</td><td>新增</td><td>2016-6-28</td></tr>
+                <tr class="even"><td class="one">初一（1）班</td><td>王辰</td><td>201501003</td><td>1234567</td><td>补打</td><td>2016-6-28</td></tr>
+                <tr><td class="one">初一（1）班</td><td>王辰</td><td>201501001</td><td>1234567</td><td>新增</td><td>2016-6-28</td></tr>
+                <tr class="even"><td class="one">初一（1）班</td><td>王辰</td><td>201501003</td><td>1234567</td><td>补打</td><td>2016-6-28</td></tr>
+                <tr><td class="one">初一（1）班</td><td>王辰</td><td>201501001</td><td>1234567</td><td>新增</td><td>2016-6-28</td></tr>
+                <tr class="even"><td class="one">初一（1）班</td><td>王辰</td><td>201501003</td><td>1234567</td><td>补打</td><td>2016-6-28</td></tr>
+                <tr><td class="one">初一（1）班</td><td>王辰</td><td>201501001</td><td>1234567</td><td>新增</td><td>2016-6-28</td></tr>
+                <tr class="even"><td class="one">初一（1）班</td><td>王辰</td><td>201501003</td><td>1234567</td><td>补打</td><td>2016-6-28</td></tr>
+                
+            </table>
+
+            </div>
+            <!--分页-->
+            <div class="qkypage">
+                <a href="#" class="no">上一页</a>
+                <a href="#" class="cur">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                ...
+                <a href="#">12</a>
+                <a href="#">下一页</a>
+           	</div>    
+            </div>
+        </div>
+        
+        
+
+  
+    </div>
+</div>
+
+<!--底部-->
+<div class="qky_footer">
+<div>广东全通教育股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+
+
+<script>
+
+
+$(function() {
+	qkysel();
+ 	qkychbox_sigle();
+	calendar(".timeicon",".qky_calendar");//日历启动 点击的元素，容器元素
+});
+
+
+</script>
+</body>
+</html>

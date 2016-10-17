@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>信访管理——管理员</title>
+<link href="css/xfgl.css" rel="stylesheet" type="text/css"/>
+<!--框架css-->
+<link href="css/common_2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui.css" rel="stylesheet" type="text/css"/>
+
+
+<!--公共js-->
+<script src="bil/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="bil/jqui1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box clear3">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">张三 教师</a><a href="#">安全退出</a><a href="#">设置</a></div>
+            <div class="qky_top_button"><a href="#" class="trn"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+        </div>
+    </div>
+    <div class="header1">
+        <div class="qky_top_box clear3">
+            
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe69c;</i>帮助</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe61d;</i>全课云APP</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon fz_4">&#xe616;</i></div>
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+    <div class="qky_main clear3">
+    	
+    	<div class="xf_xie main_bg">
+        	<div class="xf_title">
+            <i class="appicon co_bl mr6 fz_20">&#xe612;</i>信访统计
+            <a class="qkybut lk fr fan tjtype">按月份</a>
+            <a class="qkybut lk fr fan mr16 tjtype">按类型</a>
+            <a class="qkybut lk fr fan mr16 cur tjtype">按回复状态</a>
+            </div>
+            
+            <div class="xf_tjlistbox">
+                <div class="xf_tjlist" id="list1">
+                    <div class="tjlist_icon fl wd_60 t_c"><i class="appicon co_ye2 bsthw"></i></div>
+                    <div class="fr tjlist_txt wd_40"><span></span><label></label></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="tjline fl"></div>
+                <div class="xf_tjlist fl" id="list2">
+                    <div class="tjlist_icon fl wd_60 t_c pt10 two"><i class="appicon  co_bl2 bsthw" style="font-size:70px;"></i></div>
+                    <div class="fr tjlist_txt wd_40"><span></span><label></label></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+           
+        </div> 
+       
+       <div class="xf_list main_bg mt16">
+           <div class="xf_title">
+                <i class="appicon co_bl mr6  fz_20">&#xe61b;</i>信访管理 
+                <a class="qkybut lk fr M">标记全部为已回复</a>
+                <a class="qkybut lk fr mr16 M">标记为已回复</a>
+                <a class="qkybut lk fr mr16 M">删除</a>
+                <a class="qkybut lk fr mr16 M" href="index_admin_add.html">登记来信</a>
+            </div>
+            <table cellpadding="0" cellspacing="0" border="0" class="qkytable xf_admin">      
+                <tr class="xftab_abox">
+                    <td><a class="qkychbox trn fang" ischoose="0"><i class="qkyicon">&#xe69f;</i></a></td>
+                    <td width="7%"><i class="appicon fz_26 co_ye">&#xe617;</i></td>
+                    <td width="8%" >
+                    <a class="mr6 cz" href="index_admin_edit.html"><i class="qkyicon">&#xe6af;</i></a>
+                    <a class="cz" onClick="popIn('#delmsg')"><i class="qkyicon co_red">&#xe6a8;</i></a>
+                    </td>
+                    <td><a href="index_admin_info.html">关于全通中学2016年学费的几点疑问</a></td>
+                    <td>线下来信</td>
+                    <td>未回复</td>
+                    <td>2016-8-1 15：03</td>
+                </tr>
+               
+                <tr class="xftab_abox">
+                    <td><a class="qkychbox trn fang" ischoose="0"><i class="qkyicon">&#xe69f;</i></a></td>
+                    <td width="7%"><i class="appicon fz_26 co_ye2" >&#xe618;</i></td>
+                    <td width="8%" class="xftab_abox">
+                    <a onClick="popIn('#delmsg')" class="cz"><i class="qkyicon co_red">&#xe6a8;</i></a>
+                    </td>
+                    <td><a href="index_admin_info.html">关于全通中学2016年学费的几点疑问</a></td>
+                    <td>线上来信</td>
+                    <td>已回复</td>
+                    <td>2016-8-1 15：03</td>
+                </tr>
+                <tr class="xftab_abox">
+                    <td><a class="qkychbox trn fang" ischoose="0"><i class="qkyicon">&#xe69f;</i></a></td>
+                    <td width="7%"><i class="appicon fz_26 co_ye">&#xe617;</i></td>
+                    <td width="8%" >
+                    <a class="mr6 cz" href="index_admin_edit.html"><i class="qkyicon">&#xe6af;</i></a>
+                    <a class="cz" onClick="popIn('#delmsg')"><i class="qkyicon co_red">&#xe6a8;</i></a>
+                    </td>
+                    <td><a href="index_admin_info.html">关于全通中学2016年学费的几点疑问</a></td>
+                    <td>线下来信</td>
+                    <td>未回复</td>
+                    <td>2016-8-1 15：03</td>
+                </tr>
+               
+                <tr class="xftab_abox">
+                    <td><a class="qkychbox trn fang" ischoose="0"><i class="qkyicon">&#xe69f;</i></a></td>
+                    <td width="7%"><i class="appicon fz_26 co_ye2" >&#xe618;</i></td>
+                    <td width="8%" class="xftab_abox">
+                    <a onClick="popIn('#delmsg')" class="cz"><i class="qkyicon co_red">&#xe6a8;</i></a>
+                    </td>
+                    <td><a href="index_admin_info.html">关于全通中学2016年学费的几点疑问</a></td>
+                    <td>线上来信</td>
+                    <td>已回复</td>
+                    <td>2016-8-1 15：03</td>
+                </tr>
+                <tr class="xftab_abox">
+                    <td><a class="qkychbox trn fang" ischoose="0"><i class="qkyicon">&#xe69f;</i></a></td>
+                    <td width="7%"><i class="appicon fz_26 co_ye">&#xe617;</i></td>
+                    <td width="8%" >
+                    <a class="mr6 cz" href="index_admin_edit.html"><i class="qkyicon">&#xe6af;</i></a>
+                    <a class="cz" onClick="popIn('#delmsg')"><i class="qkyicon co_red">&#xe6a8;</i></a>
+                    </td>
+                    <td><a href="index_admin_info.html">关于全通中学2016年学费的几点疑问</a></td>
+                    <td>线下来信</td>
+                    <td>未回复</td>
+                    <td>2016-8-1 15：03</td>
+                </tr>
+               
+                <tr class="xftab_abox">
+                    <td><a class="qkychbox trn fang" ischoose="0"><i class="qkyicon">&#xe69f;</i></a></td>
+                    <td width="7%"><i class="appicon fz_26 co_ye2" >&#xe618;</i></td>
+                    <td width="8%" class="xftab_abox">
+                    <a onClick="popIn('#delmsg')" class="cz"><i class="qkyicon co_red">&#xe6a8;</i></a>
+                    </td>
+                    <td><a href="index_admin_info.html">关于全通中学2016年学费的几点疑问</a></td>
+                    <td>线上来信</td>
+                    <td>已回复</td>
+                    <td>2016-8-1 15：03</td>
+                </tr>
+                <tr class="xftab_abox">
+                    <td><a class="qkychbox trn fang" ischoose="0"><i class="qkyicon">&#xe69f;</i></a></td>
+                    <td width="7%"><i class="appicon fz_26 co_ye">&#xe617;</i></td>
+                    <td width="8%" >
+                    <a class="mr6 cz" href="index_admin_edit.html"><i class="qkyicon">&#xe6af;</i></a>
+                    <a class="cz" onClick="popIn('#delmsg')"><i class="qkyicon co_red">&#xe6a8;</i></a>
+                    </td>
+                    <td><a href="index_admin_info.html">关于全通中学2016年学费的几点疑问</a></td>
+                    <td>线下来信</td>
+                    <td>未回复</td>
+                    <td>2016-8-1 15：03</td>
+                </tr>
+               
+                <tr class="xftab_abox">
+                    <td><a class="qkychbox trn fang" ischoose="0"><i class="qkyicon">&#xe69f;</i></a></td>
+                    <td width="7%"><i class="appicon fz_26 co_ye2" >&#xe618;</i></td>
+                    <td width="8%" class="xftab_abox">
+                    <a onClick="popIn('#delmsg')" class="cz"><i class="qkyicon co_red">&#xe6a8;</i></a>
+                    </td>
+                    <td><a href="index_admin_info.html">关于全通中学2016年学费的几点疑问</a></td>
+                    <td>线上来信</td>
+                    <td>已回复</td>
+                    <td>2016-8-1 15：03</td>
+                </tr>
+               
+            </table>
+       		<div class="qkypage mt16">
+                <a href="#" class="no">上一页</a>
+                <a href="#" class="cur">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                ...
+                <a href="#">12</a>
+                <a href="#">下一页</a>
+           	</div>
+       </div>
+         
+    </div>
+</div>
+
+<!--底部-->
+<div class="qky_footer">
+<div>广东全通教育股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+
+<div class="qky_maskbox" id="delmsg" >
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian L">
+        <div class="qky_masktit"><span id="titname">删除信息提示</span><a class="maskclose" onClick="popOut('#delmsg')"><i class="qkyicon">&#xe6aa;</i></a></div>
+        <div class="qky_maskcont pa_lr16 Pt16">
+        	<i class="qkyicon" id="msgicon">&#xe62e;</i>
+        	<div id="msgtxt">你确定要删除该数据吗？</div>
+        	<div class="t_c mb26">
+            <a class="qkybut hbg brad4 M  mr16" onClick="popOut('#delmsg')">确定</a>
+            <a class="qkybut hbg brad4 M" onClick="popOut('#delmsg')">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+
+<script>
+hf_datas=[
+["&#xe600;","未读信件","12"],
+["&#xe601;","未回复信件","15"]
+];
+
+lx_datas=[
+["&#xe61a;","线下来信","100"],
+["&#xe613;","线上来信","26"]
+];
+
+mo_datas=[
+["&#xe600;","本月来信","100"],
+["&#xe601;","本月回信","26"]
+];
+
+$(function() {
+	qkychbox();
+	inlist(hf_datas[0],"#list1");
+	inlist(hf_datas[1],"#list2");
+	tjtype();
+});
+
+function tjtype(){
+	$(".tjtype").each(function(i) {
+        $(this).click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur");
+			if(i==0){
+			inlist(mo_datas[0],"#list1");
+			inlist(mo_datas[1],"#list2");
+			$(".tjlist_icon.two").addClass("pt10").find("i").css("font-size","70px");
+			}
+			if(i==1){
+			inlist(lx_datas[0],"#list1");
+			inlist(lx_datas[1],"#list2");
+			$(".tjlist_icon.two").removeClass("pt10").find("i").css("font-size","80px");
+			}
+			if(i==2){
+			inlist(hf_datas[0],"#list1");
+			inlist(hf_datas[1],"#list2");
+			$(".tjlist_icon.two").addClass("pt10").find("i").css("font-size","70px");
+			}
+		});
+    });
+}
+
+
+function inlist(data,id){
+	
+	$(id).find(".tjlist_icon i").html(data[0]);
+	$(id).find(".tjlist_txt span").html(data[1]);
+	$(id).find(".tjlist_txt label").html(data[2]);
+}
+
+
+</script>
+</body>
+</html>

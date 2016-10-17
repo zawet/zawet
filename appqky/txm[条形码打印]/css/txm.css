@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+.tmprint_box{ background:#f9f9f9; padding:0 0 16px; border:1px solid #e8e8e8;}
+.tmprint_box .qkysel{ margin-bottom:16px !important;}
+
+.tmprint_show{}
+.tmprint_titlt{background:#f9f9f9; padding:0 0 16px;border:1px solid #e8e8e8;}
+.printview_box{ width:736px;height:1060px;  background:#fff; box-sizing:border-box;margin: 0 auto;  }
+.printview_box .tmbox{ width:49.7%; border:0; box-sizing:border-box; margin-bottom:2px;}
+.printview_box .tmbox.pintv{ margin:0;}
+.jianju{ float:left; width:0px; height:1px;}
+.jianju_s{ width:100%; height:0px; float:left;}
+.printview_box .tmbox  img{ width:100%;}
+.printview_box .tmbox .bg{ width:100%;}
+.printview_box .tmbox.nobg{ background:#fff;}
+.printview_box .tmbox.nobg .bg{ opacity:0;filter:alpha(opacity=0);}
+.printview_box .tmbox .boxdre{ border:0;}
+.printview_box .tmbox .photo{ height:auto; width:24.4%; top:33.6%; left:5%; background:none;}
+.printview_box .tmbox .name{width:20%; top:37%; left:55%; color:#333; font-size:18px; font-weight:700; text-align:left}
+.printview_box .tmbox .number{width:20%; top:62%; left:55%;color:#333; font-size:18px; font-weight:700; text-align:left}
+.printview_box .tmbox .txm{ height:auto; width:56%; top:78%; left:39%; background:none;}
+
+.tmlist_box{  background:#f9f9f9; padding:0 0 16px;border:1px solid #e8e8e8;}
+.tmlist_tit{padding:16px 16px;border-bottom:1px solid #ddd;background:#f6f6f6;box-shadow:0 1px 2px #eee;}
+.tmlist_cont{margin:auto 16px;}
+.ctit{ padding:10px 0;}
+.ctit span{ height:34px; line-height:34px; font-size:16px; display:block;}
+.tmlist{ width:49%; box-sizing:border-box; background:#fff; margin-bottom:16px; border:1px solid #e1e1e1; padding:10px; border-radius:6px; text-align:center;box-shadow:0 1px 2px #eee;}
+.mr10b{ margin-right:2%;}
+.tmlist .tit{ padding-bottom:10px; border-bottom:1px solid #e1e1e1; margin-bottom:12px; }
+.tmlist .tit span{font-weight:bold; font-size:16px;}
+.list_img{ width:48%; min-height:100px; }
+.list_img img{ width:100%;border:4px solid #e8e8e8; border-radius:4px; box-sizing:border-box; max-height:144px;}
+.list_img div{ height:28px; line-height:28px; text-align:center; color:#666;}
+
+.tm_main{ background:#f9f9f9; padding:0 0 16px; border:1px solid #e8e8e8;}
+.tm_tit{ padding:16px 0; font-size:20px; color:#04acf7; border-bottom:1px solid #ddd; text-align:center; background:#f3f3f3; position:relative;box-shadow:0 1px 2px #eee; }
+.tm_tit a{ position:absolute;padding:0  0 16px; width:30px; top:10px; right:16px;}
+.tm_tit a i{font-size:30px;}
+.tm_ul{margin:16px 30px 0;}
+.tm_li{ margin-bottom:16px;}
+.tm_li span{ float:left;box-sizing:border-box; width:20%; text-align:left; line-height:34px; height:34px; font-size:16px; color:#666; display:block;}
+.tm_li span.two{ width:auto; text-align:left;}
+.tm_li .tminput{ float:left; border:1px solid #eee; background:#fff; width:80%; box-sizing:border-box; height:32px; line-height:32px;color:#666; padding-left:10px;}
+.tm_li .tminput.duan{ width:22%;}
+.tm_li2{ width:100%;  margin-top:16px; padding-bottom:16px;}
+.tm_li2 span{line-height:46px; height:46px; font-size:16px; color:#323232; display:block;}
+.tmface{ width:100%; border:2px  dashed #3fc1fd;background: url(../images/txm.png) no-repeat #fff center center;min-height:180px; box-sizing:border-box;}
+.tmbutbox{ width:60%; text-align:right; margin-bottom:10px;}
+.tmbutbox a{ display: inline-block;width:40% !important; position:relative; padding:0 !important;}
+.tmbutbox a input[type="file"]{ position: absolute; width:100%; height:100%; left:0; top:0;filter:alpha(opacity=0); opacity:0;}
+.tmbutbox2{ width:100%; text-align:center; margin-top:16px;}
+
+.tmbox{ border:2px solid #3fc1fd; background: url(../images/txm.png) no-repeat center center #fcfcfc;  position:relative;}
+.tmbox .boxdre{width:40%; height:30px; text-align:center; font-size:16px; color:#666; cursor: move;  border:1px dashed #ddd; position:absolute; left:0; top:0;}
+.tmbox .photo{ background:#fff; }
+.tmbox .name{ top:32px;}
+.tmbox .number{ top:64px;}
+.tmbox .txm{ top:96px; background:#fff;}
+
+.txmtable{ width:100%;}
+.intable{ width:100%; background:#fff; margin-bottom:14px;}
+.intable th{ background:#04acf7; color:#fff; padding:8px 0; font-size:14px; box-shadow:0 2px 4px #c8c8c8;}
+.intable tr .qkychbox{ margin-right:0;}
+.intable tr.even td{ background:#fafafa;}
+.intable td{ color:#666; text-align:center; padding:10px 0; font-size:14px; border:1px solid #f1f1f1; border-top:none; border-left:none;}
+.intable td.one{ border-left:1px solid #f1f1f1;}

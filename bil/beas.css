@@ -1,0 +1,26 @@
+@charset "gb2312";
+/* CSS Document */
+
+body{ padding:0; margin:0; width:100%; background: #eee; font-family: Arial,Microsoft YaHei; position:absolute; top:0; left:0; height:100%;}
+.clear{ clear:both;}
+.box12{ width:80%; margin:0 auto; max-width:1600px;}
+.zwt_logo{ width:80%; margin:10px auto; padding:40px 20px 30px; box-sizing:border-box; border-bottom:2px dashed #DDD; }
+.zwt_logo img{ display:block; max-width:100%; margin:0 auto; }
+.zwt_prolist{padding:1% 0; box-sizing:border-box;}
+.prolist{ width:32%;margin:0 0 1% 1%; box-sizing:border-box; float:left;  }
+.prolist:nth-child(1){ display:none;}
+.prolist:nth-child(2){ display:none;}
+.prolist a{ color:#333; font-size:16px; display:block; padding:20px 0 30px; text-align:center; text-decoration: none; overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
+.prolist a:hover{ text-shadow:0 6px 5px #aaa; color:#04acf7;}
+.prolist a label{cursor:pointer;}
+.prolist_i{ width:100%; font-size:36px; font-weight:bold; height:60px; line-height:60px;}
+.prolist a:hover .prolist_i{color:#04acf7 !important;}
+.trn{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
+
+.prolist.zi{ width:20%; margin:0;}
+
+@media screen and (max-width: 1200px) {
+.box12{ width:80%; margin:0 auto;}
+
+
+}

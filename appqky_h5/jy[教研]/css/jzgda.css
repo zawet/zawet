@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.qkyinfobox{ background:#3b3a40; padding:16px 8px;}
+
+.sexcho.nan.cur .qkychbox{ color:#04acf7 !important;}
+.sexcho.nan.cur label{ color:#04acf7 !important;}
+.sexcho.nv.cur .qkychbox{ color:#f86161 !important;}
+.sexcho.nv.cur label{ color:#f86161 !important;}
+
+.infokuai{ width:92%; margin:16px auto; border-radius:8px; border:1px solid #ddd; background:#fff;}
+.infokuai_tit{ background:#04be02; color:#fff; text-align: center; padding:10px 0; border-radius:8px 8px 0 0; font-size:20px;}
+.ik_li{ border-bottom:1px dashed #bbb; padding:14px 0;}
+
+.x_yuan{ display:inline-block; width:8px; height:8px; border-radius:50%; background:#04be02; margin-right:8px;}
+.sx_but{ padding:4px 10px; border-right:1px solid #ddd; color:#787878;}
+
+
+.h100{ height:100%;}
+.hauto{ height:auto !important;}
+.socrllbox{ overflow-y:scroll;}
+.xscorll{ overflow-x:scroll; overflow-y:hidden;}
+.tyle_li{ width:80%; display:block; margin:0 auto; padding:16px 0; text-align: center; font-size:18px; color:#a3a3a3; border-bottom:1px solid #ddd;}
+.tyle_li.cur{ width:100%; background:#fff; color:#04be02; border-color:#ccc; }
+
+.zuzhi_li{ width:90%; display:block; margin:0 0 0 10%; padding:16px 0; text-align: left; font-size:18px; color:#343339; border-bottom:1px solid #eee;}
+.zuzhi_li.cur{ color:#04be02; border-color:#ccc; }
+
+.join_count{ width:5em; height:5em; border-radius:50%; border:2px solid #04be02; text-align:center; color:#666px; font-size:16px; }
+.jy_fjli{ background:#fafafa; border-radius:4px; display: block; width:60px; height:60px; line-height:60px; text-align:center; border:1px solid #eaeaea; position:relative; margin:0 16px 20px 0;} 
+.jy_fjli i{ color:#b4b4b4;}
+.jy_fjli label{ display:block; width:100%; background:#04be02; font-size:12px; text-align:center; color:#fff; position:absolute; bottom:0; left:0; border-radius:0 0 4px 4px; height:18px; line-height:18px;}
+.jy_fjli span{position:absolute; top:100%; left:0;display:block; width:100%; font-size:14px; height:26px; line-height:26px; color:#8d8d8d; text-align:center;}

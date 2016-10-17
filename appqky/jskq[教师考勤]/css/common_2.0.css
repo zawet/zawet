@@ -1,0 +1,302 @@
+/*************************************************************
+基础信息：
+	主明：此css为公共应用的样式，包括公共模块样式，和基础样式，一般附加样式请另起css;
+	可以添加和修改里面的样式，但得注明版本和更新内容;
+	初始化版本号：1.0;
+	初始化人员：zwt;
+	日期：2016/01/12;
+**********************************************************
+更新信息：
+	更新日期：2016/02/22
+	更新人员：zwt
+	更新后版本号：2.0
+	更新内容：更新更细节的基础样式，把颜色和一些普遍使用到的属性脱出，方便整体调整
+	
+	更新日期：2016/06/22
+	更新人员：zwt
+	更新后版本号：2.1
+	更新内容：简化框架css，深度定制了一些内外边距
+
+**************************************************************/
+
+@charset "utf-8";
+
+/*公用图标字体架构*/
+@font-face {font-family: "qky_icon";
+  src: url('../iconfont/qkyicon_font/iconfont.eot'); /* IE9*/
+  src: url('../iconfont/qkyicon_font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../iconfont/qkyicon_font/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../iconfont/qkyicon_font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../iconfont/qkyicon_font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.qkyicon {
+  font-family:"qky_icon" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+ /*-webkit-text-stroke-width: 0.2px;*/
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/*基础样式*/
+body{ font-size:14px; font-family: Arial,Microsoft YaHei; color:#666666; overflow-x:hidden; width:100%;-webkit-text-stroke: 1px transparent; background:#f3f3f3;}
+*{ margin:0; padding:0; text-decoration:none; list-style:none; font-weight:normal;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+li,ul{list-style:none; margin:0; padding:0;}
+img,button,input,select{ border:0px; outline:none;}
+
+a{ cursor:pointer; text-decoration:none;}
+i,em{ font-style:normal;}
+textarea,input{ outline:none;}
+
+/*浮动*/
+.fl{ float:left!important;}
+.fr{ float:right!important;}
+/*清除浮动*/
+.clear{ clear:both;}
+.clear2{ clear:both; zoom:1;}
+.clear3:before,.clear3:after{ content: " "; display: table;}
+.clear3:after {clear: both;}
+
+/*隐藏*/
+.yc{ display:none !important;}
+.iskuai{ display:block!important;}
+/*特殊css*/
+.trn{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}/*过度执行动画  ie8以及以下没作用*/
+.r45{transform:rotate(45deg); -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);}/*旋转45度  ie8以及以下没作用*/
+.r90{transform:rotate(90deg); -webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);}/*旋转90度  ie8以及以下没作用*/
+.dian3{ overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}/*单行文字超出显示...*/
+.t_i{text-indent:2em;}/*段落缩进*/
+.mbm{margin:0 auto; display:block; max-width:100%;}/*图片水平居中*/
+.bshw{ box-shadow:0 2px 3px #ccc;}
+.bshw1{ box-shadow:0 4px 4px #ddd;}
+.bshw2{ box-shadow:0 1px 2px #eee;}
+.bshw3{box-shadow:0px 2px 3px #eee;-webkit-box-shadow:0px 2px 3px #eee;-moz-box-shadow:0px 2px 3px #eee;}
+.bshw4{box-shadow:1px 2px 4px #bbb;-webkit-box-shadow:1px 2px 4px #bbb;-moz-box-shadow:1px 2px 4px #bbb;}
+.bsthw{ text-shadow:0 3px 3px #ddd; }
+.ycfile {position: absolute;width: 100%;height: 100%;left: 0;top: 0;filter: alpha(opacity=0);opacity: 0;z-index: 66;cursor: pointer;}
+.hbtl{ text-decoration:underline;}
+.box_b{ box-sizing:border-box;}
+
+
+/*文字水平*/
+.t_r{ text-align:right!important;}
+.t_l{ text-align:left!important;}
+.t_c{ text-align: center!important;}
+
+/*文字颜色  颜色可调*/
+.fz_we{ font-weight:700;}
+.co_z1{ color:#111!important;}/*深灰*/
+.co_z3{ color:#333!important;}/*平常灰*/
+.co_z6{ color:#666!important;}/*淡灰*/
+.co_z9{ color:#999!important;}/*一点灰*/
+.co_w{ color:#fff  !important;}/*白*/
+
+
+.co_bl{ color:#04acf7 !important;}/*蓝*/
+.co_bl2{ color:#3fc1fd !important;}/*蓝2（淡）*/
+.co_ye{ color:#f7dc6e!important;}/*黄*/
+.co_ye2{ color:#ff9804!important;}/*黄2（淡）*/
+.co_gr{ color:#06adb7!important;}/*绿*/
+.co_gr2{ color:#a9e444!important;}/*绿2（淡）*/
+.co_or{ color:#f98222!important;}/*橘*/
+.co_or2{ color:#fdd010!important;}/*橘2（淡）*/
+.co_red{ color:#ff2b7f !important;}/*红*/
+.co_sbl{ color:#3e4659 !important;}
+.co_zi{ color:#4d72ad !important;}
+.co_zi2{ color:#aa80cf !important;}
+.co_zi3{ color:#7d3cb5 !important;}
+.co_89{ color:#898989 !important;}
+
+
+/*背景颜色*/
+.ba_z1{ background:#111!important;}
+.ba_z3{ background:#333!important;}
+.ba_z6{ background:#666!important;}
+.ba_z9{ background:#999!important;}
+.ba_f1{ background:#f1f1f1!important;}
+.ba_f9{ background:#f9f9f9!important;}
+.ba_w{ background:#fff!important;}
+
+.ba_bl{ background:#04acf7 !important;}/*蓝*/
+.ba_bl2{ background:#3fc1fd !important;}/*蓝2（淡）*/
+.ba_sbl{ background:#7d828f !important;}/*蓝2（淡）*/
+.ba_ye{ background:#ff6600!important;}/*黄*/
+.ba_ye2{ background:#e76847!important;}/*黄2（淡）*/
+.ba_gr{ background:#46b198!important;}/*绿*/
+.ba_gr2{ background:#32b754!important;}/*绿2（淡）*/
+.ba_or{ background:#f98222!important;}/*橘*/
+.ba_or2{ background:#fdd010!important;}/*橘2（淡）*/
+.ba_red{ background:#ff2b7f !important;}/*红*/
+
+/*文字字号*/
+.fz_12{ font-size:12px!important;}
+.fz_14{ font-size:14px!important;}
+.fz_16{ font-size:16px!important;}
+.fz_18{ font-size:18px!important;}
+.fz_20{ font-size:20px!important;}
+.fz_22{ font-size:22px!important;}
+.fz_24{ font-size:24px!important;}
+.fz_26{ font-size:26px!important;}
+.fz_28{ font-size:28px!important;}
+.fz_30{ font-size:30px!important;}
+.fz_40{ font-size:40px!important;}
+.fz_50{ font-size:50px!important;}
+.fz_100{ font-size:100px!important;}
+
+/*边框*/
+.br_eee{ border:1px solid #eee!important;}
+.brt_eee{ border-top:1px solid #eee!important;}
+.brb_eee{ border-bottom:1px solid #eee!important;}
+.brl_eee{ border-left:1px solid #eee!important;}
+.brr_eee{ border-right:1px solid #eee!important;}
+
+.br_ddd{border:1px solid #ddd!important;}
+.br_fff{border:1px solid #fff !important;}
+.br_f1{border:1px solid #f1f1f1!important;}
+.br_f9{border:1px solid #f9f9f9!important;}
+.br_ddd{border:1px solid #ddd!important;}
+.br_nall{ border:none!important;}
+.br_nt{ border-top:none;}
+.br_nb{ border-bottom:none;}
+.br_nl{ border-left:none;}
+.br_nr{ border-right:none;}
+
+/*圆角 ie8以及以下没作用*/
+.brra_4{ border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;}
+.brra_6{ border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;}
+.brra_8{ border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;}
+.brra_50{ border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%px;}/*圆形 ie8以及以下没作用*/
+
+/*内边距*/
+.pa_16{ padding:16px!important;}
+.pa_14{ padding:14px!important;}
+.pa_12{ padding:12px;!important;}
+.pa_tb12{ padding:12px 0!important;}
+.pa_tb14{ padding:14px 0!important;}
+.pa_tb16{ padding:16px 0!important;}
+.pa_lr12{ padding:0 12px!important;}
+.pa_lr14{ padding:0 14px!important;}
+.pa_lr16{ padding:0 16px!important;}
+
+.pl26{ padding-left:26px!important;}
+.pr26{ padding-right:26px!important;}
+.pl16{ padding-left:16px!important;}
+.pr16{ padding-right:16px!important;}
+.pr10{ padding-right:10px!important;}
+.pl10{ padding-left:10px!important;}
+.pr6{ padding-right:6px!important;}
+.pl6{ padding-left:6px!important;}
+.pr0{ padding-right:0px!important;}
+.pl0{ padding-left:0px!important;}
+
+.pt26{ padding-top:26px!important;}
+.pb26{ padding-bottom:26px!important;}
+.pt16{ padding-top:16px!important;}
+.pb16{ padding-bottom:16px!important;}
+.pt10{ padding-top:10px!important;}
+.pb10{ padding-bottom:10px!important;}
+.pt6{ padding-top:6px!important;}
+.pb6{ padding-bottom:6px!important;}
+.pt0{ padding-top:0px!important;}
+.pb0{ padding-bottom:0px!important;}
+
+
+/*外边距*/
+.ma_tb16{ margin:16px auto!important;}
+.ma_tb14{ margin:14px auto!important;}
+.ma_tb12{ margin:12px auto!important;}
+.ma_lrauto{ margin:auto!important;}
+
+.ml26{ margin-left:26px!important;}
+.mr26{ margin-right:26px!important;}
+.ml16{ margin-left:16px!important;}
+.mr16{ margin-right:16px!important;}
+.mr10{ margin-right:10px!important;}
+.ml10{ margin-left:10px!important;}
+.mr8{ margin-right:8px!important;}
+.ml8{ margin-left:8px!important;}
+.mr6{ margin-right:6px!important;}
+.ml6{ margin-left:6px!important;}
+.mr2{ margin-right:2px!important;}
+.ml2{ margin-left:2px!important;}
+
+
+.mt26{ margin-top:26px!important;}
+.mb26{ margin-bottom:26px!important;}
+.mt16{ margin-top:16px!important;}
+.mb16{ margin-bottom:16px!important;}
+.mt10{ margin-top:10px!important;}
+.mb10{ margin-bottom:10px!important;}
+.mt8{ margin-top:8px!important;}
+.mb8{ margin-bottom:8px!important;}
+.mt6{ margin-top:6px!important;}
+.mb6{ margin-bottom:6px!important;}
+.mt2{ margin-top:2px!important;}
+.mb2{ margin-bottom:2px!important;}
+
+
+/*百分比宽度*/
+.wd_100{ width:100%!important;}
+.wd_96{ width:96%!important;}
+.wd_90{ width:90%!important;}
+.wd_85{ width:85%!important;}
+.wd_80{ width:80%!important;}
+.wd_77{ width:77%!important;}
+.wd_75{ width:75%!important;}
+.wd_70{ width:70%!important;}
+.wd_60{ width:60%!important;}
+.wd_50{ width:50%!important;}
+.wd_55{ width:55%!important;}
+.wd_45{ width:44%!important;}
+.wd_40{ width:40%!important;}
+.wd_48{ width:48%!important;}
+.wd_30{ width:30%!important;}
+.wd_29{ width:29%!important;}
+.wd_28{ width:28%!important;}
+.wd_26{ width:26%!important;}
+.wd_24{ width:24%!important;}
+.wd_20{ width:20%!important;}
+.wd_18{ width:18%!important;}
+.wd_17{ width:17%!important;}
+.wd_16{ width:16%!important;}
+.wd_15{ width:15%!important;}
+.wd_10{ width:10%!important;}
+.wd_5{ width:5%!important;}
+.wd_1{ width:1%!important;}
+
+.wrapper{ padding-top: 96px;}
+
+/*顶部模块框架样式*/
+.qky_header{  position:fixed;width:100%; z-index:999999999; overflow:hidden; margin:0; left:0;top:0;}
+.qky_top_box{width:1000px;margin:0 auto;}
+.qky_top_txt{height:48px; line-height:48px;}
+.qky_logo{ padding:0; float:left; height:46px; line-height:16px;margin-right:20px;}
+.qky_logo img{ margin:6px 0 0; vertical-align:inherit;}
+.qky_top_navs{ float:left;}
+.qky_top_navs li{ float:left;line-height:48px; margin-right:2px;}
+.qky_top_navs li a{line-height:48px;  height:48px;font-size:14px; text-align:center;  display:block;padding:0 25px;}
+.qky_top_search{ float:right; text-align:right; margin-left:60px;height:48px; line-height:48px; overflow:hidden;}
+.qky_top_search a{ padding:0 8px; font-size:13px; display:inline-block; position:relative; }
+.qky_top_button{ width:112px; height:30px; float:right; margin-top:7px;}
+.qky_top_button a{  border-radius:4px; display:block; line-height:30px; text-align:center; cursor:pointer;}
+.qky_top_button a i{margin-right:6px;}
+.qky_tab{ height:48px; line-height:48px; padding:0 21px; border:1px solid ; border-bottom:none; border-top:none; margin-left:-1px; cursor:pointer;}
+
+
+/*中部模块框架样式*/
+.qky_content{ width:100%; height:auto;}
+/*中部导航模块框架样式*/
+.qky_nav { width:1000px; height:auto; margin:14px auto 0;}
+/*中部主要模块框架样式*/
+.qky_main{width:1000px; height:auto;  margin:0 auto; padding-top:16px;}
+		
+
+/*底部模块框架样式*/
+.qky_footer{ width:100%; padding:14px 0;}
+.qky_footer div{ text-align:center;line-height:30px;}
+.qky_footer div img{ margin:5px auto; display:block;}
+
