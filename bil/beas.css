@@ -1,4 +1,4 @@
-@charset "gb2312";
+@charset "utf-8";
 /* CSS Document */
 
 body{ padding:0; margin:0; width:100%; background: #eee; font-family: Arial,Microsoft YaHei; position:absolute; top:0; left:0; height:100%;}
@@ -8,8 +8,8 @@ body{ padding:0; margin:0; width:100%; background: #eee; font-family: Arial,Micr
 .zwt_logo img{ display:block; max-width:100%; margin:0 auto; }
 .zwt_prolist{padding:1% 0; box-sizing:border-box;}
 .prolist{ width:32%;margin:0 0 1% 1%; box-sizing:border-box; float:left;  }
-.prolist:nth-child(1){ display:none;}
-.prolist:nth-child(2){ display:none;}
+/*.prolist:nth-child(1){ display:none;}
+.prolist:nth-child(2){ display:none;}*/
 .prolist a{ color:#333; font-size:16px; display:block; padding:20px 0 30px; text-align:center; text-decoration: none; overflow:hidden;text-overflow:ellipsis; white-space:nowrap;}
 .prolist a:hover{ text-shadow:0 6px 5px #aaa; color:#04acf7;}
 .prolist a label{cursor:pointer;}
