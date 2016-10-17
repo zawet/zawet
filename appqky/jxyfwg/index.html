@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>校园服务岗_管理主页</title>
+<!--附加css-->
+<link href="css/xyfwg.css" rel="stylesheet" type="text/css"/>
+<!--框架css-->
+<link href="css/common_3.2.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui_theme_xyfwg.css" rel="stylesheet" type="text/css"/>
+
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="bil/jqui1.11.4/jquery-ui.min.js" ></script>
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+<!--插件js-->
+</head>
+<body>
+
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">张三 教师</a></div>
+            <div class="qky_top_button"><a href="#"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header1">
+        <div class="qky_top_box">
+        <ul class="qky_top_navs">
+            <li><a href="index.html" class=" fz_16 cur"><i class="qkyicon mr6">&#xe6cf;</i>服务岗管理</a></li>
+            <li><a href="index_tj.html" class=" fz_16"><i class="qkyicon mr6">&#xe6c9;</i>服务岗统计</a></li>
+            </ul>
+           	
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+	<div class="qky_main clear3">    
+    	<div class="qkynav_zu clear3">
+            <a class="cur trn" href="index.html"><i class="appicon mr6">&#xe607;</i>报名中</a>
+            <a class="trn" href="index_ing.html"><i class="appicon mr6">&#xe606;</i>执勤中</a>
+            <a class="trn" href="index_end.html"><i class="appicon mr6">&#xe605;</i>已结束</a>
+            <a class="trn fz_18 fr ba_ye" href="index_add.html" ><i class="appicon mr6">&#xe604;</i>添加新服务岗</a>
+        </div>	
+        <div class="main_bg">
+        	
+            <div class="clear3 pb16 br_b br_eee">
+                <div class="qkysel wd_35 fl clear3">
+                <div class="fl seltxt fz_16 fz_we">报名人数：</div>
+                <a class="qkychbox yuan trn fl mr6 h34 ml16 cur"><i class="qkyicon">&#xe69f;</i></a><span class="fl fz_16">全部</span>
+                <a class="qkychbox yuan trn fl mr6 h34 ml16"><i class="qkyicon">&#xe69f;</i></a><span class="fl fz_16">已满</span>
+                <a class="qkychbox yuan trn fl mr6 h34 ml16"><i class="qkyicon">&#xe69f;</i></a><span class="fl fz_16">未满</span>
+                </div>
+                <div class="qkyinp brra_17  clear3 ba_f1 fr wd_65 box_b br_fff ">
+                   <div class="fl inpbut wd_6 t_c"><a><i class="qkyicon co_z9 fz_20 fz_we">&#xe63b;</i></a></div>
+                   <div class="fl inptext wd_94"><input type="text" placeholder="请输入搜索内容" class="fz_16"></div>
+                </div> 
+            </div>
+            <div class="clear3 mt16">
+                <div class="fw_list fl">
+                    <div class="fw_tit ba_gr  box_b pl16 lh44"><a href="index_info.html" class="co_ff">周末图书馆图书整理</a></div>
+                    <div class="fw_cont ba_f9 clear3 pa_14">
+                        <div class="fl wd_56 fwcont_img">
+                        	<img src="images/liimg.png" class="wd_100">
+                            <span class="ba_ye2">服务人数：<b>10</b></span>
+                            <div class="fwcont_cz clear3 trn">
+                            <a href="index_edit.html"><i class="appicon mr6">&#xe602;</i>修改</a>
+                            <a onClick="popIn('#delmsg')"><i class="appicon mr6">&#xe603;</i>删除</a>
+                            </div>
+                        </div>
+                        <div class="fr pl14 wd_44 box_b">
+                            <span class="iskuai fz_we fz_16 lh30">报名人数：</span>
+                            <div class="clear3 ma_tb10 wd_100 fw_number">
+                            <label class="co_gr  t_c iskuai lh48  fw_ren dian3 fl" title="60">60</label>
+                            <b class="fl wd_20 t_c lh48"><i class="appicon co_ye ">&#xe600;</i></b>
+                            </div>
+                            <a class="qkybut hbg trn wd_100 iskuai brra_4 ba_gr2 brc_gr2" onClick="popIn('#szzqr')">设置执勤人</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fw_list hot fl">
+                    <div class="fw_tit ba_gr co_ff box_b pl16 lh44"><a href="index_info.html" class="co_ff">周末图书馆图书整理</a></div>
+                    <div class="fw_cont ba_f9 clear3 pa_14">
+                        <div class="fl wd_56 fwcont_img">
+                        	<img src="images/liimg2.png" class="wd_100">
+                            <span class="ba_ye2">服务人数：<b>130</b></span>
+                            <div class="fwcont_cz clear3 trn">
+                            <a  href="index_edit.html"><i class="appicon mr6">&#xe602;</i>修改</a>
+                            <a onClick="popIn('#delmsg')"><i class="appicon mr6">&#xe603;</i>删除</a>
+                            </div>
+                        </div>
+                        <div class="fr pl14 wd_44 box_b">
+                            <span class="iskuai fz_we fz_16 lh30">报名人数：</span>
+                            <div class="clear3 ma_tb10 wd_100 fw_number">
+                            <label class="co_gr  t_c iskuai lh48  fw_ren dian3 fl" title="6057">6057</label>
+                            <b class="fl wd_20 t_c lh48"><i class="appicon co_ye ">&#xe600;</i></b>
+                            </div>
+                            <a class="qkybut hbg trn wd_100 iskuai brra_4 ba_gr2 brc_gr2" onClick="popIn('#szzqr')">设置执勤人</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fw_list fl">
+                    <div class="fw_tit ba_gr co_ff box_b pl16 lh44"><a href="index_info.html" class="co_ff">周末图书馆图书整理</a></div>
+                    <div class="fw_cont ba_f9 clear3 pa_14">
+                        <div class="fl wd_56 fwcont_img">
+                        	<img src="images/liimg.png" class="wd_100">
+                            <span class="ba_ye2">服务人数：<b>10</b></span>
+                            <div class="fwcont_cz clear3 trn">
+                            <a  href="index_edit.html"><i class="appicon mr6">&#xe602;</i>修改</a>
+                            <a onClick="popIn('#delmsg')"><i class="appicon mr6">&#xe603;</i>删除</a>
+                            </div>
+                        </div>
+                        <div class="fr pl14 wd_44 box_b">
+                            <span class="iskuai fz_we fz_16 lh30">报名人数：</span>
+                            <div class="clear3 ma_tb10 wd_100 fw_number">
+                            <label class="co_gr  t_c iskuai lh48  fw_ren dian3 fl" title="60">60</label>
+                            <b class="fl wd_20 t_c lh48"><i class="appicon co_ye ">&#xe600;</i></b>
+                            </div>
+                            <a class="qkybut hbg trn wd_100 iskuai brra_4 ba_gr2 brc_gr2" onClick="popIn('#szzqr')">设置执勤人</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fw_list fl">
+                    <div class="fw_tit ba_gr co_ff box_b pl16 lh44"><a href="index_info.html" class="co_ff">周末图书馆图书整理</a></div>
+                    <div class="fw_cont ba_f9 clear3 pa_14">
+                        <div class="fl wd_56 fwcont_img">
+                        	<img src="images/liimg.png" class="wd_100">
+                            <span class="ba_ye2">服务人数：<b>10</b></span>
+                            <div class="fwcont_cz clear3 trn">
+                            <a  href="index_edit.html"><i class="appicon mr6">&#xe602;</i>修改</a>
+                            <a onClick="popIn('#delmsg')"><i class="appicon mr6">&#xe603;</i>删除</a>
+                            </div>
+                        </div>
+                        <div class="fr pl14 wd_44 box_b">
+                            <span class="iskuai fz_we fz_16 lh30">报名人数：</span>
+                            <div class="clear3 ma_tb10 wd_100 fw_number">
+                            <label class="co_gr  t_c iskuai lh48  fw_ren dian3 fl" title="60">60</label>
+                            <b class="fl wd_20 t_c lh48"><i class="appicon co_ye ">&#xe600;</i></b>
+                            </div>
+                            <a class="qkybut hbg trn wd_100 iskuai brra_4 ba_gr2 brc_gr2" onClick="popIn('#szzqr')">设置执勤人</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fw_list hot fl">
+                    <div class="fw_tit ba_gr co_ff box_b pl16 lh44"><a href="index_info.html" class="co_ff">周末图书馆图书整理</a></div>
+                    <div class="fw_cont ba_f9 clear3 pa_14">
+                        <div class="fl wd_56 fwcont_img">
+                        	<img src="images/liimg2.png" class="wd_100">
+                            <span class="ba_ye2">服务人数：<b>130</b></span>
+                            <div class="fwcont_cz clear3 trn">
+                            <a  href="index_edit.html"><i class="appicon mr6">&#xe602;</i>修改</a>
+                            <a onClick="popIn('#delmsg')"><i class="appicon mr6">&#xe603;</i>删除</a>
+                            </div>
+                        </div>
+                        <div class="fr pl14 wd_44 box_b">
+                            <span class="iskuai fz_we fz_16 lh30">报名人数：</span>
+                            <div class="clear3 ma_tb10 wd_100 fw_number">
+                            <label class="co_gr  t_c iskuai lh48  fw_ren dian3 fl" title="6057">6057</label>
+                            <b class="fl wd_20 t_c lh48"><i class="appicon co_ye ">&#xe600;</i></b>
+                            </div>
+                            <a class="qkybut hbg trn wd_100 iskuai brra_4 ba_gr2 brc_gr2" onClick="popIn('#szzqr')">设置执勤人</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fw_list fl">
+                    <div class="fw_tit ba_gr co_ff box_b pl16 lh44"><a href="index_info.html" class="co_ff">周末图书馆图书整理</a></div>
+                    <div class="fw_cont ba_f9 clear3 pa_14">
+                        <div class="fl wd_56 fwcont_img">
+                        	<img src="images/liimg.png" class="wd_100">
+                            <span class="ba_ye2">服务人数：<b>10</b></span>
+                            <div class="fwcont_cz clear3 trn">
+                            <a  href="index_edit.html"><i class="appicon mr6">&#xe602;</i>修改</a>
+                            <a onClick="popIn('#delmsg')"><i class="appicon mr6">&#xe603;</i>删除</a>
+                            </div>
+                        </div>
+                        <div class="fr pl14 wd_44 box_b">
+                            <span class="iskuai fz_we fz_16 lh30">报名人数：</span>
+                            <div class="clear3 ma_tb10 wd_100 fw_number">
+                            <label class="co_gr  t_c iskuai lh48  fw_ren dian3 fl" title="60">60</label>
+                            <b class="fl wd_20 t_c lh48"><i class="appicon co_ye ">&#xe600;</i></b>
+                            </div>
+                            <a class="qkybut hbg trn wd_100 iskuai brra_4 ba_gr2 brc_gr2" onClick="popIn('#szzqr')">设置执勤人</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="qkypage">
+                    <a href="#" class="no">上一页</a>
+                    <a href="#" class="cur">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">下一页</a>
+            </div>
+        </div>
+              
+
+        
+    </div>   
+</div>
+<!--底部-->
+<div class="qky_footer">
+<div>全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+<!--弹窗---------------------------------->
+
+<div class="qky_maskbox" id="szzqr">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XL">
+        <div class="qky_masktit">设置执勤人<a class="maskclose" onClick="popOut('#szzqr')"><i class="qkyicon">&#xe6aa;</i></a></div>
+        <div class="qky_maskcont pa_lr20 pt12">
+        	<div class="qkysel mb12 clear3">
+                <div class="seltxt fl wd_26 t_r">服务岗名称：</div>
+                <div class="selshow fl inp wd_68 br_nall">周末图书馆图书整理</div>
+            </div>
+            <div class="qkysel mb12 clear3">
+                <div class="seltxt fl wd_26 t_r">服务人数：</div>
+                <div class="selshow fl inp wd_68 br_nall">100人</div>
+            </div>
+        	<div class="qkysel mb12 clear3">
+                <div class="seltxt fl  wd_26 t_r">监督长：</div>
+                <div class="selshow fl  wd_68 br_ddd">
+                    <a class="selectON dian3" id="ks_type">任大大</a>
+                    <div class="optionbox ba_fa">
+                    <a class="option trn dian3" value="任大大">任大大</a>
+                    <a class="option trn dian3" value="杨大大">杨大大</a>
+                    <a class="option trn dian3" value="关大大">关大大</a>
+                    </div>
+                </div>
+            </div>
+            <div class="qkysel mb12 clear3">
+                <div class="seltxt fl  wd_26 t_r">执勤人：</div>
+                <div class="selshow fl wd_68 br_ddd">
+                	<a class="selectON dian3" id="cho_zu"  style="height:34px;"></a>
+                    <div class="optionbox pa_10 box_b ba_fa">
+                    		<div class="t_c co_gr">当前已选<em class="cho">0</em>人，还可选<em class="sheng"></em>人</div>
+                            <div class="px_namebox">
+                            <span class="px_name"><a class="qkychbox fang trn"><i class="qkyicon">&#xe69f;</i></a><span>任大大</span></span>
+                            <span class="px_name"><a class="qkychbox fang trn"><i class="qkyicon">&#xe69f;</i></a><span>杨大大</span></span>
+                            <span class="px_name"><a class="qkychbox fang trn"><i class="qkyicon">&#xe69f;</i></a><span>关大大</span></span>
+                            </div>
+                    </div>
+                
+                </div>
+            </div>
+            <em class=" t_c co_gr  fz_16 iskuai mb12">确定后，服务岗信息将不能修改和删除</em>
+            
+            <div class="t_c mb26">
+            <a class="qkybut hbg brad4 M "><i class="appicon mr6">&#xe609;</i>确认</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--删除提示-->
+<div class="qky_maskbox" id="delmsg" >
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian L">
+        <div class="qky_masktit"><span id="titname">删除提示</span><a class="maskclose" onClick="popOut('#delmsg')"><i class="qkyicon">&#xe6aa;</i></a></div>
+        <div class="qky_maskcont pa_lr16 pt16">
+        	<i class="appicon co_z6" id="msgicon">&#xe603;</i>
+        	<div class="" id="msgtxt">你确定要删除此服务岗吗？</div>
+        	<div class="t_c mb26">
+            <a class="qkybut hbg brad4 M  mr16" onClick="popOut('#delmsg')"><i class="appicon mr6">&#xe609;</i>确定</a>
+            <a class="qkybut hbg brad4 M" onClick="popOut('#delmsg')"><i class="appicon mr6">&#xe60a;</i>取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+$(function(){
+	qkysel();
+	qkychbox_sigle();
+	px_zu();
+	$(".fw_ren").each(function(i) {
+        $(this).html(formatNum($(this).html()));
+    });
+	$(".sheng").html(Number($(".px_name").length)-Number($(this).parent().find(".px_name.cur").length));
+	
+});
+
+
+function px_zu(){
+
+	
+	//单列表点击
+	$(".px_name").each(function(r) {
+		$(this).attr("isclick","no");
+        $(this).click(function(){
+			$(this).toggleClass("cur").find(".qkychbox").toggleClass("cur");
+			if($(this).attr("isclick")=="no"){
+				tohtml("#cho_zu",$(this).find("span").html()+",",1);
+				$(this).attr("isclick","yes");
+			}else{
+				tohtml("#cho_zu",$(this).find("span").html(),"del");
+				
+				$(this).attr("isclick","no");
+				
+			}
+			tonumber($(".px_name").length,$(this).parent().find(".px_name.cur").length);
+		});
+    });
+	
+}
+
+function tonumber(zong,cho){
+	$(".cho").html(cho);
+	$(".sheng").html(Number(zong)-Number(cho));
+}
+function tohtml(id,value,type){
+	if(type==0){
+	$(id).html(value);
+	}else if(type=="del"){
+		var yhtml=$(id).html();
+		yhtml=yhtml.replace(value+",","");
+		$(id).html(yhtml);
+	}else{ 
+	$(id).append(value);
+	}
+}
+
+function formatNum(str){
+var newStr = "";
+var count = 0;
+ 
+if(str.indexOf(".")==-1){
+   for(var i=str.length-1;i>=0;i--){
+ if(count % 3 == 0 && count != 0){
+   newStr = str.charAt(i) + "," + newStr;
+ }else{
+   newStr = str.charAt(i) + newStr;
+ }
+ count++;
+   }
+   str = newStr; //自动补小数点后两位
+   
+}
+else
+{
+   for(var i = str.indexOf(".")-1;i>=0;i--){
+ if(count % 3 == 0 && count != 0){
+   newStr = str.charAt(i) + "," + newStr;
+ }else{
+   newStr = str.charAt(i) + newStr; //逐个字符相接起来
+ }
+ count++;
+   }
+   str = newStr+str .substr(str.indexOf("."),3);
+ }
+ return str;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+@import "common.less";
+/*顶部模块框架样式*/
+.qky_header{  position:fixed;width:100%; z-index:100; overflow:hidden; margin:0; left:0;top:0;
+	.header1{ background:@qky_zcolor;}
+	.header2{ background:@qky_zbgcolor;}
+	.qky_top_box{width:@qkym_width;margin:0 auto; color:white;.clear;
+		.qky_logo{ padding:0; float:left; height:46px; line-height:16px;margin-right:20px;
+			img{margin:6px 0 0; vertical-align:inherit;}
+		}
+		.qky_top_navs{ float:left;
+			li{float:left;line-height:48px; margin-right:2px;
+				a{line-height:48px;  height:48px;font-size:14px; text-align:center; color:#fff; display:block;padding:0 25px;
+					&:hover{ background:@qky_fcolor;}
+					&.cur{ background:@qky_fcolor;}
+				}	
+			}
+		}
+		.qky_top_search{ float:right; text-align:right; margin-left:60px;height:48px; line-height:48px; overflow:hidden;
+			a{ padding:0 8px; font-size:13px; display:inline-block; position:relative;}
+		}
+		.qky_top_button{ width:112px; height:30px; float:right; margin-top:7px;
+			a{ border-radius:4px; border:1px solid #e7e7e7; display:block; line-height:30px; text-align:center; cursor:pointer;
+				&:hover{border:1px solid @qky_zcolor;}
+				i{margin-right:6px;}
+			}
+		}
+		.qky_tab{ height:48px; line-height:48px; padding:0 21px; border:1px solid #0099de; border-bottom:none; border-top:none; margin-left:-1px; cursor:pointer;}
+	}
+}
+
+//中部模块框架样式mixin
+.qkybox(@width:@qkym_width,@mt:0,@pt:0){
+	width:@width;
+	height:auto;
+	margin:@mt auto 0; padding-top:@pt;
+}
+
+/*中部模块框架样式*/
+.qky_content{ .qkybox(100%);
+	.qky_nav {.qkybox(@qkym_width,14px,16px); }
+	.qky_main{.qkybox(@qkym_width,0,16px);}
+}
+
+/*底部模块框架样式*/
+.qky_footer{ width:100%; background:#fff; padding:14px 0;
+	div{text-align:center; color:#666; line-height:30px;
+		img{margin:5px auto; display:block;}
+	}
+}
+

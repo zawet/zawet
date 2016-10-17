@@ -1,0 +1,191 @@
+@charset "utf-8";
+/*************************************************************
+基础信息：
+	主明：此css全课云ui样式，属于一些组建和控件的统一与各类的样式
+	可以添加和修改里面的样式，但得注明版本和更新内容;
+	初始化版本号：1.0;
+	初始化人员：zwt;
+	日期：2016/06/06;
+**********************************************************
+更新信息：
+
+**************************************************************/
+
+
+/*下拉菜单*/
+.qkysel{ height:32px; line-height:32px; font-size:14px; color:#666;}
+.qkysel .seltxt{height:34px; line-height:34px; margin-right:4px;}
+.qkysel .seltxt.dingw{width:70px; overflow:hidden;text-overflow:ellipsis; white-space:nowrap; text-align:right;}
+.qkysel .selftxt{ width:32px; height:32px; line-height:32px; text-align:center; background:#a2a2a2; border-radius:50%; color:#fff; font-size:16px;}
+.qkysel .selshow{ border:1px solid #ddd; background: url(../images/selicon.png) no-repeat 96% center #fafafa; width:106px; padding-left:10px; cursor:pointer; position:relative;}
+.qkysel .selshow.auto{ width:auto; padding:0 0 0 14px; box-sizing:border-box;}
+.qkysel .selshow.XS{ width:30px; padding: 0 7px ; }
+.qkysel .selshow.inp.XS input{text-align:center;}
+.qkysel .selshow.MSS{ width:50px;}
+.qkysel .selshow.MS{ width:60px;}
+.qkysel .selshow.S80{ width:80px;}
+.qkysel .selshow.S100{ width:100px;}
+.qkysel .selshow.S130{ width:130px;}
+.qkysel .selshow.S140{ width:140px;}
+.qkysel .selshow.S{ width:120px;}
+.qkysel .selshow.M{ width:160px;}
+.qkysel .selshow.M180{width:180px;}
+.qkysel .selshow.L{ width:220px;}
+.qkysel .selshow.XL{ width:280px;}
+.qkysel .selshow.inp{ background:#fff;}
+.qkysel .selshow.inp.hicon{ background:#fff; position:relative; z-index:99;}
+.qkysel .selshow.inp.hicon .timeicon{ position:absolute; width:32px; height:32px; color:#f98222; top:0; right:0; text-align:center; z-index:12;}
+.qkysel .selshow.inp.hicon .u_d{position:absolute; width:32px; height:32px; color:#f98222; top:0; right:0; text-align:center; z-index:12;}
+.qkysel .selshow.inp.hicon .u_d i{ display:block; text-align:center; font-size:14px; line-height:16px;}
+.qkysel .selshow.inp.hicon .u_d i.noc{ color:#888;}
+.qkysel .selshow.inp input[type='text'],.qkysel .selshow.inp input[type='date']{ background:none; border:none; color:#666; font-size:14px; width:100%; position:relative; z-index:11; }
+.qkysel .selshow a.selectON{ width:85%; padding-right:15%; display:block;}
+.qkysel .optionbox{ position:absolute; width:100%; top:100%; left:-1px; background:#fff; border:1px solid #ddd; display:none; z-index:666;}
+.qkysel .optionbox.scroll{ height:400px;overflow-y:scroll; overflow-x:hidden; }
+.qkysel .optionbox a.option{ line-height:28px; height:28px; text-align:center; font-size:14px; color:#777; display:block; margin:1px 0; background:#fff; width:90%; padding:0 5%;}
+.qkysel .optionbox a.option:hover{ background:#f98222; color:#fff;}
+.qkysel .optionbox div.option{ width:100%;position:relative; z-index:777; margin-bottom:2px; }
+.qkysel .optionbox div.option a.twosel{ width:75%; padding-left:5%; margin:0 10%; display:block; border-bottom:1px solid #eee;line-height:30px; height:30px;background: url(../images/selicon.png) no-repeat 98% center #fff;}
+.qkysel .optionbox2{width:80%; margin:0 auto; display:none;}
+.qkysel .optionbox2 a.option2{width:85%; padding-left:5%; margin:0 5%;color:#999;line-height:28px; height:28px; text-align:center;display:block; text-align:left;}
+.qkysel .optionbox2 a.option2:hover{background:#f98222; color:#fff;}
+
+/*平行输入框和按钮*/
+.qkyinp{ width:200px; background:#fcfcfc; border:1px solid #ececec;}
+.qkyinp.M{ width:250px;}
+.qkyinp.L{ width:300px;}
+.qkyinp.XL{ width:350px;}
+.qkyinp .inptext{ width:80%; box-sizing:border-box;}
+.qkyinp .inptext input{ width:100%; height:32px; line-height:32px;font-size:14px;color:#666;background:none; border:none; font-family: Arial,Microsoft YaHei;}
+.qkyinp .inpbut{ width:20%;box-sizing:border-box; }
+.qkyinp .inpbut a{ display:block;height:32px; line-height:32px; color:#666; text-align:center; font-size:14px;}
+.qkyinp .inpbut a i{ font-size:18px;}
+/*按钮*/
+.qkybut{ width:80px; text-align:center; line-height:32px; height:32px; border:1px  solid #f98222; font-size:14px; display:inline-block; box-sizing:border-box;}
+.qkybut{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
+.qkybut.auto{ width:auto; padding:0 6px;}
+.qkybut.XS{ width:40px;}
+.qkybut.S{ width:60px;}
+.qkybut.M{ width:120px;}
+.qkybut.ML{ width:130px;}
+.qkybut.L{ width:160px;}
+.qkybut.XL{ width:200px;}
+.qkybut.P100{ width:100%;}
+.qkybut.sigzi{ border:none; color:#666;}
+.qkybut.sigzi:hover,.qkybut.sigzi.cur{ color:#f98222; }
+.qkybut.hbg{background:#f98222; color:#fff;-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
+.qkybut.hbg:hover,.qkybut.hbg.cur{box-shadow:0 1px 4px #ddd; background:#f2730c; border-color:#f2730c;}
+.qkybut.fhbg{background:#b5c334; color:#fff;border-color:#b5c334;}
+.qkybut.fhbg:hover,.qkybut.fhbg.cur{box-shadow:0 1px 4px #ddd; background:#8acb1a; border-color:#b5c334;}
+.qkybut.lk{ border-color:#e6e6e6; background:#fff; border-radius:4px; width:auto; padding:0 6px;}
+.qkybut.lk.fan{border-color:#f98222; color:#f98222;}
+.qkybut.lk.M{padding:0 12px !important;}
+.qkybut.lk.L{padding:0 18px !important;}
+.qkybut.lk.XL{padding:0 24px !important;}
+.qkybut.lk.XXL{padding:0 54px !important;}
+.qkybut.lk.bf80{ padding:0; width:80%; height:40px; line-height:40px;}
+.qkybut.lk.bf90{ padding:0; width:92%; height:50px; line-height:50px;}
+.qkybut.lk:hover,.qkybut.lk.cur{border-color:#f98222; color:#f98222;}
+.qkybut.lk.fan:hover,.qkybut.lk.fan.cur{ background:#f98222; color:#fff;}
+.qkybut.lk.bf90:hover,.qkybut.lkbf90.cur{border-color:#c3ebfd;}
+.qkybut.max_cbut{font-size:16px; height:40px; line-height:40px; display: inline-block; margin:0 auto;}
+.qkybut.tline{ border:none; border-top:1px  solid #f6f6f6; width:100%; color:#f98222; background:#fafafa;}
+.qkybut.tline:hover{ color:#fff; background:#f98222;border-color:#f98222;}
+.qkybut.bline{ border:none; border-bottom:4px  solid #fff;color:#f98222; background:#fff; width:auto;}
+.qkybut.bline:hover,.qkybut.bline.cur{background:#fff;border-color:#ffae00; color:#ffae00;}
+
+.qkybut.brad4{border-radius:4px;}
+
+/*分页*/
+.qkypage{ text-align:center; margin:0 auto 10px; }
+.qkypage a{ display:inline-block; height:28px; line-height:28px; padding:0 12px; border:1px solid #ddd; margin:0 3px; background:#fff; color:#666; border-radius:2px}
+.qkypage a.cur,.qkypage a:hover{ background:#f98222; color:#fff; border-color:#f98222;}
+.qkypage a.no{ color:#aaa; border-color: #eee; background:#fff;cursor:default;}
+
+
+/*弹窗基础样式*/
+.qky_maskbox{ position: absolute; z-index:99999999; top:0; left:0; width:100%; height:100%; display:none;}
+.qky_maskbg{position:fixed; z-index:555; top:0; left:0; background: url(../images/bg100.png); width:100%; height:100%;}
+.qky_maskmian{ position: absolute; z-index:6666; width:300px; background:#fff; }
+.qky_maskmian.L{ width:320px;}
+.qky_maskmian.XL{ width:460px;}
+.qky_maskmian.W600{ width:600px;}
+.qky_maskmian.XXL{ width:660px;}
+.qky_maskmian.XXXL{ width:800px;}
+.qky_maskmian.W1000{ width:1000px;}
+.qky_masktit{ height:46px; line-height:46px; color:#fff; font-size:18px; position:relative; background:#f98222; border-bottom:1px  solid #f98222;text-align:center;}
+.qky_masktit_b{ height:36px; line-height:36px; color:#FFF; font-size:18px; position:relative; background:#f98222;text-align:center;}
+.maskclose{ position:absolute; width:18px; height:18px; right:12px; top:12px; text-align:center; line-height:18px;}
+.maskclose i{ font-size:18px;}
+.qky_maskcont{ width:100%;box-sizing:border-box;}
+.qky_maskcont .sigtext{ width:100%; padding:30px 0; text-align:center; font-size:14px; color:#f98222; display:block;}
+.qky_maskbuts{ width:100%; border-top:1px solid #f0f0f0; background:#fcfcfc;}
+.maskBut{ width:50%; box-sizing:border-box; color:#3fc1fd; font-size:16px; text-align:center; padding:16px 0;}
+.maskBut.one{ border-right:1px  solid #f0f0f0;}
+
+
+/*自主复选框*/
+.qkychbox{ width:14px; height:14px; background:#fff; border:1px solid #ccc;border-radius:2px; display:inline-block; line-height:15px; text-align:center;color:#fff;}
+.qkychbox.cur{ background:#f98222; border-color:#f98222;}
+.qkychbox.type2.cur{ border-color:#f98222; color:#f98222; background:#fff;}
+.qkychbox i{ font-size:12px; }
+.h34{ margin:8px 0;}
+.qkychbox.h34{ margin-right:4px; display:block;}
+.qkychbox.yuan{ width:16px; height:16px; line-height:17px; border-radius:50%;}
+
+/*文本框*/
+.qkytextarea{ width:100%;}
+.qkytextarea .ta_tit{ color:#666; font-size:14px; height:30px; line-height:32px; width:100%; text-align:left;}
+.qkytextarea textarea{ background:#fcfcfc; border:1px solid #eee; width:92%; min-height:40px;font-family: Arial,Microsoft YaHei; padding:4%; font-size:12px; color:#a2a2a2; line-height:20px;}
+.qkytextarea.float .ta_tit{ width:auto; float:left;margin-right:4px;}
+.qkytextarea.float textarea{ width:auto; float:left; min-height:100px; }
+.qkytextarea textarea.XL{ width:210px; padding: 6px 10px;}
+.qkytextarea.p100 textarea{ width:88%; box-sizing:border-box;padding: 6px 10px;}
+.qkyh1{ width:100%; padding:8px 0; text-align:center; font-size:20px; color:#666; position:relative;}
+.qkyi_close{ position:absolute; width:46px; height:46px; text-align:center; line-height:40px; top:0; left:0;}
+.qkyi_close i{ font-size:24px;}
+
+/*日历*/
+.qky_calendar{width:300px;background:#fff;padding:10px; position:absolute; top:100%; left:0; z-index:99999; display:none;box-shadow:0 2px 4px #c8c8c8; border:1px solid #eee;}
+.qky_calsel{ height:32px; line-height:32px; font-size:14px; color:#666;}
+.qky_calsel .calselshow{ border:1px solid #ececec; background: url(../images/selicon.png) no-repeat 96% center #fafafa; width:70px; cursor:pointer; position:relative;}
+.qky_calsel .calselshow a.calselectON{ width:80%; padding:0 10%; display:block;}
+.qky_calsel .caloptionbox{ position:absolute; width:100%; top:100%; left:-1px; background:#fff; border:1px solid #ececec; display:none; z-index:666;}
+.qky_calsel .caloptionbox.yearbox{ height:400px; overflow-y:scroll; overflow-x:hidden;}
+.qky_calsel .caloptionbox a.option{ line-height:28px; height:28px; text-align:center; font-size:14px; color:#777; display:block; margin:1px 0; background:#fff; width:90%; padding:0 5%;}
+.qky_calsel .caloptionbox a.option:hover{ background:#f98222; color:#fff;}
+.qky_calendar .showdate{ height:34px; line-height:34px; font-size:16px; color:#f98222;}
+.qky_cal_tab{ width:100%;  }
+.qky_cal_tab th{ padding:8px 0; background:#f98222; color:#fff; font-size:14px;box-shadow:0 2px 4px #c8c8c8;}
+.qky_cal_tab td{ color:#666; text-align:center;font-size:14px; border:1px solid #f1f1f1; border-top:none; border-left:none;}
+.qky_cal_tab tr td:first-of-type{ border-left:1px solid #f1f1f1;}
+.qky_cal_tab td a{ display:block; padding:6px 0; }
+.qky_cal_tab td .today{ background:#ffdc1d;color:#fff;}
+.qky_cal_tab td a:hover,.qky_cal_tab td a.cur{ background:#f98222;color:#fff;}
+
+
+/*交互导航*/
+.qkynav{ width:100%; background:#fff;}
+.qkynav label{ color:#f98222; font-size:16px;border-bottom:1px solid #f1f1f1; display:block; position: relative; height:40px; line-height:40px; width:100%; box-sizing:border-box; text-align:center; cursor:pointer;}
+.qkynav label i{ font-size:18px;}
+.qkynav label a{ position:absolute; width:16px; height:16px; line-height:16px; top:13px; right:16px;}
+.qkynav label a i{ font-size:14px;}
+.qkynav ul{ width:100%; display:none;}
+.qkynav ul li{ width:100%; text-align:center; font-size:14px; color:#666; height:36px; line-height:36px; cursor:pointer;}
+.qkynav ul li.cur{ color:#f98222;}
+
+/*表格基础样式*/
+.qkytable{ width:100%;}
+.qkytable th{ background:#f98222; color:#fff; padding:8px 0; font-size:14px; box-shadow:0 2px 4px #c8c8c8;}
+.qkytable tr.even td{ background:#fafafa;}
+.qkytable td{ color:#666; text-align:center; padding:10px 0; font-size:14px; border:1px solid #f1f1f1; border-top:none; border-left:none; line-height:32px;}
+.qkytable td.one{ border-left:1px solid #f1f1f1;}
+
+.qkytable.type2 th{background:#b5c334;box-shadow:0 2px 4px #839010;}
+.qkytable.type2 td{line-height: normal;}
+.qkytable.type2 tr.even td{ background:#fffcf4;}
+
+.qkytable.type3 th{background:#ffedc6;box-shadow: none; color:#eda363;border-right:1px solid #ffe3a8; padding:12px 0;}
+.qkytable.type3 tr.uptit th{ background:#26747d; border-color:#26747d; color:#fff; font-size:18px;margin-left:1px;}
+.qkytable.type3 td{line-height: normal;border-color:#ffe3a8; padding:7px 0;}
+.qkytable.type3 tr.even td{ background:#fffcf4;}

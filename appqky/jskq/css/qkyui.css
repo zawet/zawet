@@ -1,0 +1,326 @@
+@charset "utf-8";
+/*************************************************************
+基础信息：
+	主明：此css全课云ui样式，属于一些组建和控件的统一与各类的样式
+	可以添加和修改里面的样式，但得注明版本和更新内容;
+	初始化版本号：1.0;
+	初始化人员：zwt;
+	日期：2016/06/06;
+**********************************************************
+更新信息：
+
+**************************************************************/
+
+
+/*下拉菜单*/
+.qkysel{ line-height:32px; font-size:14px;}
+.qkysel.center_l{ width:480px; margin:auto;}
+.qkysel .seltxt{height:34px; line-height:34px; margin-right:4px; position:relative;}
+.qkysel .seltxt.dingw{width:70px; overflow:hidden;text-overflow:ellipsis; white-space:nowrap; text-align:right;}
+.qkysel .seltxt b{ position:absolute; left:-16px; top:0; display:block; height:34px; line-height:44px; width:16px; font-size:20px; text-align: right;}
+.qkysel .selftxt{ width:32px; height:32px; line-height:32px; text-align:center; border-radius:50%; color:#fff; font-size:16px;}
+.qkysel .selshow{ width:106px; padding-left:10px; cursor:pointer; position:relative;}
+.qkysel .selshow.auto{ width:auto; padding:0 0 0 14px; box-sizing:border-box;}
+.qkysel .selshow.XS{ width:30px; padding: 0 7px ; }
+.qkysel .selshow.inp.XS input{text-align:center;}
+.qkysel .selshow.MSS{ width:50px;}
+.qkysel .selshow.MS57{ width:57px;}
+.qkysel .selshow.MS{ width:60px;}
+.qkysel .selshow.MS77{ width:77px;}
+.qkysel .selshow.S80{ width:80px;}
+.qkysel .selshow.S100{ width:100px;}
+.qkysel .selshow.S110{ width:110px;}
+.qkysel .selshow.S130{ width:130px;}
+.qkysel .selshow.S140{ width:140px;}
+.qkysel .selshow.S{ width:120px;}
+.qkysel .selshow.M{ width:160px;}
+.qkysel .selshow.M180{width:180px;}
+.qkysel .selshow.L{ width:220px;}
+.qkysel .selshow.XL{ width:280px;}
+.qkysel .selshow.XXL{ width:340px;}
+.qkysel .selshow.inp.hicon{ position:relative; z-index:99;}
+.qkysel .selshow.inp.hicon .timeicon{ position:absolute; width:32px; height:32px; top:0; right:0; text-align:center; z-index:12;}
+.qkysel .selshow.inp.hicon .u_d{position:absolute; width:32px; height:32px; top:0; right:0; text-align:center; z-index:12;}
+.qkysel .selshow.inp.hicon .u_d i{ display:block; text-align:center; font-size:14px; line-height:16px;}
+.qkysel .selshow.inp input[type='text'],.qkysel .selshow.inp input[type='date']{ background:none; border:none;  font-size:14px; width:100%; position:relative; z-index:11; font-family: Arial,Microsoft YaHei;}
+.qkysel .selshow a.selectON{ width:85%; padding-right:15%; display:block;}
+.qkysel .optionbox{ position:absolute; width:100%; top:100%; left:-1px;  display:none; z-index:666;}
+.qkysel .upsel .optionbox{ top:auto; bottom:100%;}
+.qkysel .optionbox.scroll{ height:400px;overflow-y:scroll; overflow-x:hidden; }
+.qkysel .optionbox a.option{ line-height:28px; height:28px; text-align:center; font-size:14px;display:block; margin:1px 0; width:90%; padding:0 5%;}
+.qkysel .optionbox div.option{ width:100%;position:relative; z-index:777; margin-bottom:2px; }
+.qkysel .optionbox div.option a.twosel{ width:75%; padding-left:5%; margin:0 10%; display:block; line-height:30px; height:30px;}
+.qkysel .optionbox2{width:80%; margin:0 auto; display:none;}
+.qkysel .optionbox2 a.option2{width:85%; padding-left:5%; margin:0 5%;color:#999;line-height:28px; height:28px; text-align:center;display:block; text-align:left;}
+
+/*平行输入框和按钮*/
+.qkyinp{ width:200px;}
+.qkyinp.M{ width:250px;}
+.qkyinp.L{ width:300px;}
+.qkyinp.XL{ width:350px;}
+.qkyinp .inptext{ width:80%; box-sizing:border-box;}
+.qkyinp .inptext input{ width:100%; height:32px; line-height:32px;font-size:14px;background:none; border:none; font-family: Arial,Microsoft YaHei;}
+.qkyinp .inpbut{ width:20%;box-sizing:border-box; }
+.qkyinp .inpbut a{ display:block;height:32px; line-height:32px;  text-align:center; font-size:14px;}
+.qkyinp .inpbut a i{ font-size:18px;}
+
+/*按钮*/
+.qkybut{ width:80px; text-align:center; line-height:32px; height:32px; font-size:14px; display:inline-block; box-sizing:border-box;}
+.qkybut{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
+.qkybut.auto{ width:auto; padding:0 6px;}
+.qkybut.XS{ width:40px;}
+.qkybut.S{ width:60px;}
+.qkybut.M{ width:120px;}
+.qkybut.ML{ width:130px;}
+.qkybut.L{ width:160px;}
+.qkybut.XL{ width:200px;}
+.qkybut.P100{ width:100%;}
+.qkybut.sigzi{ border:none;}
+.qkybut.hbg{-webkit-transition: all 0.25s ease-out 0s;-moz-transition: all 0.25s ease-out 0s;transition: all 0.25s ease-out 0s;}
+.qkybut.lk{ border-radius:4px; width:auto; padding:0 6px;}
+.qkybut.lk.M{padding:0 12px !important;}
+.qkybut.lk.L{padding:0 18px !important;}
+.qkybut.lk.XL{padding:0 24px !important;}
+.qkybut.lk.XXL{padding:0 54px !important;}
+.qkybut.lk.bf80{ padding:0; width:80%; height:40px; line-height:40px;}
+.qkybut.lk.bf90{ padding:0; width:92%; height:50px; line-height:50px;}
+.qkybut.min_cbut{height:40px; line-height:40px; display: inline-block; margin:0 auto;}
+.qkybut.max_cbut{font-size:16px; height:48px; line-height:48px; display: inline-block; margin:0 auto;}
+.qkybut.tline{ border:none; width:100%;}
+.qkybut.bline{ border:none; width:auto;}
+.qkybut.brad4{border-radius:4px;}
+
+/*连体按钮*/
+.qkybut_lt{text-align:center;}
+.qkybut_lt a{ display:block; float:left; height:35px; line-height:35px; background:#fff; padding:0 16px; border:1px solid #13b1bb;text-align:center; color:#13b1bb; font-size:14px;}
+.qkybut_lt a.st{ border-radius:6px 0 0 6px; margin-left:8px; border-right:none;}
+.qkybut_lt a.mi{}
+.qkybut_lt a.en{ border-radius:0 6px 6px 0;border-left:none;}
+.qkybut_lt a:hover,.qkybut_lt a.cur{ background:#13b1bb; color:#fff;}
+.qkybut_lt.center{ width:100%;}
+.qkybut_lt.center a{ display:inline-block; float:none; margin-left:-4px;}
+
+/*分页*/
+.qkypage{ text-align:center; margin:0 auto 10px; }
+.qkypage a{ display:inline-block; height:28px; line-height:28px; padding:0 12px;  margin:0 3px;border-radius:2px}
+.qkypage a.no{ cursor:default;}
+
+
+/*弹窗基础样式*/
+.qky_maskbox{ position: absolute; z-index:999999999; top:0; left:0; width:100%; height:100%; display:none;}
+.qky_maskbg{position:fixed; z-index:999999999; top:0; left:0; width:100%; height:100%;}
+.qky_maskmian{ position: absolute; z-index:9999999999; width:300px;  }
+.qky_maskmian.L{ width:320px;}
+.qky_maskmian.XL{ width:460px;}
+.qky_maskmian.W600{ width:600px;}
+.qky_maskmian.XXL{ width:660px;}
+.qky_maskmian.XXXL{ width:800px;}
+.qky_maskmian.W1000{ width:1000px;}
+.qky_masktit{ height:46px; line-height:46px; font-size:18px; position:relative;text-align:center;}
+.qky_masktit_b{ height:36px; line-height:36px; font-size:18px; position:relative;text-align:center;}
+.maskclose{ position:absolute; width:18px; height:18px; right:12px; top:12px; text-align:center; line-height:18px;}
+.maskclose i{ font-size:18px;}
+.qky_maskcont{ width:100%;box-sizing:border-box;}
+.qky_maskcont .sigtext{ width:100%; padding:30px 0; text-align:center; font-size:14px;display:block;}
+.qky_maskbuts{ width:100%; }
+.maskBut{ width:50%; box-sizing:border-box;  font-size:16px; text-align:center; padding:16px 0;}
+
+/*自主复选框*/
+.qkychbox{ width:14px; height:14px; border-radius:2px; display:inline-block !important; line-height:15px; text-align:center;}
+.qkychbox i{ font-size:12px; }
+.h34{ margin:8px 0;}
+.qkychbox.h34{ margin-right:4px; display:block;}
+.qkychbox.yuan{ width:16px; height:16px; line-height:17px; border-radius:50%;}
+
+/*文本框*/
+.qkytextarea{ width:100%; box-sizing:border-box;}
+.qkytextarea .ta_tit{ font-size:14px; height:30px; line-height:32px; width:100%; text-align:left;}
+.qkytextarea .ta_tit.dingw{width:70px; overflow:hidden;text-overflow:ellipsis; white-space:nowrap; text-align:right;}
+.qkytextarea textarea{  width:92%; min-height:40px;font-family: Arial,Microsoft YaHei; padding:4%; font-size:12px;  line-height:20px;}
+.qkytextarea.float .ta_tit{ width:auto; float:left;margin-right:4px;}
+.qkytextarea.float textarea{ width:auto; float:left; min-height:200px; }
+.qkytextarea textarea.XL{ width:210px; padding: 6px 10px;}
+.qkytextarea.p100 textarea{ width:88%; box-sizing:border-box;padding: 6px 10px; font-size:14px;}
+.qkyh1{ width:100%; padding:8px 0; text-align:center; font-size:20px; position:relative;}
+.qkyi_close{ position:absolute; width:46px; height:46px; text-align:center; line-height:40px; top:0; left:0;}
+.qkyi_close i{ font-size:24px;}
+
+/*日历*/
+.qky_calendar{width:300px;padding:10px; position:absolute; top:100%; left:0; z-index:99999; display:none;}
+.qky_calsel{ height:32px; line-height:32px; font-size:14px;}
+.qky_calsel .calselshow{ width:62px; cursor:pointer; position:relative;}
+.qky_calsel .calselshow.MS77{ width:77px;}
+.qky_calsel .calselshow a.calselectON{ width:80%; padding:0 10%; display:block;}
+.qky_calsel .caloptionbox{ position:absolute; width:100%; top:100%; left:-1px; display:none; z-index:666;}
+.qky_calsel .caloptionbox.scroll{ height:400px; overflow-y:scroll; overflow-x:hidden;}
+.qky_calsel .caloptionbox a.option{ line-height:28px; height:28px; text-align:center; font-size:14px; display:block; margin:1px 0; width:90%; padding:0 5%;}
+.qky_calsel .upsel .caloptionbox{ top:auto; bottom:100%;}
+.qky_calendar .showdate{ height:34px; line-height:34px; font-size:16px; }
+.qky_cal_tab{ width:100%;  }
+.qky_cal_tab th{ padding:8px 0;font-size:14px;}
+.qky_cal_tab td{  text-align:center;font-size:14px; border:1px  solid;border-top:none; border-left:none;}
+.qky_cal_tab td a{ display:block; padding:6px 0; }
+
+
+/*交互导航*/
+.qkynav{ width:100%; }
+.qkynav label{ font-size:16px; display:block; position: relative; height:40px; line-height:40px; width:100%; box-sizing:border-box; text-align:center; cursor:pointer;}
+.qkynav label i{ font-size:18px;}
+.qkynav label a{ position:absolute; width:16px; height:16px; line-height:16px; top:13px; right:16px;}
+.qkynav label a i{ font-size:14px;}
+.qkynav ul{ width:100%; display:none;}
+.qkynav ul li{ width:100%; text-align:center; font-size:14px;  height:36px; line-height:36px; cursor:pointer;}
+
+/*伸头导航*/
+.qkynav_zu{ width:100%;}
+.qkynav_zu a{ margin-right:2px; background:#fdd010; float:left; display:block; padding:10px 16px; color:#fff; font-size:18px; border-radius:6px 6px 0 0;}
+.qkynav_zu a:hover,.qkynav_zu a.cur{ background:#f98222;}
+
+/*表格基础样式*/
+.qkytable{ width:100%;}
+.qkytable th{ padding:8px 0; font-size:14px;}
+.qkytable td{  text-align:center; padding:10px 0; font-size:14px;border:1px solid; border-top:none; border-left:none;  line-height:32px;}
+.qkytable.type2 td{line-height: normal;}
+.qkytable.type3 th{box-shadow: none;  padding:12px 0;}
+.qkytable.type3 tr.uptit th{font-size:18px;margin-left:1px;}
+.qkytable.type3 td{line-height: normal;padding:7px 0;}
+
+/*进度条*/
+.qkyProgress{ width:100px; height:10px; border:1px solid #ddd; border-radiu:2px; position:relative; margin-right:36px;}
+.qkyProgress_zi{ width:0%; height:100%; background:#00bb9a;border-radiu:2px; }
+.qkyProgress_show{position:absolute; width:30px; text-align:center; color:#666; top:0; right:-36px; height:100%; line-height:10px;}
+
+/************************************qky颜色风格制定***************************/
+
+/*主框架颜色风格制定*/
+.qky_header .header1{ background:#06adb7;}/*头部主导航背景色*/
+.qky_header .header2{ background:#f3f3f3;}/*头部顶部背景色*/
+.qky_top_navs li a{color:#fff;}/*头部主导航按钮字颜色*/
+.qky_top_navs li a:hover,.qky_top_navs li .cur{ background:#a9e444;}/*头部主导航按钮滑动和选中背景颜色*/
+.qky_top_search a{color:#666;}/*头部顶部用户信息字颜色*/
+.qky_top_button a{border:1px solid #e7e7e7;  color:#666;}/*头部顶部返回按钮颜色搭配*/
+.qky_top_button a:hover{ border:1px solid #06adb7; color:#fff; background:#06adb7;}/*头部顶部返回按钮滑动颜色搭配*/
+.qky_tab{border-color:#fff; color:#fff;}/*头部导航右部按钮颜色搭配*/
+.qky_footer{ background:#fff;}/*底部背景色*/
+.qky_footer div{ color:#666;}/*底部字颜色*/
+
+/*下拉颜色风格制定*/
+.qkysel{color:#666;}
+.qkysel .selftxt{background:#a2a2a2; color:#fff;}
+.qkysel .seltxt b{ color:#E70509 !important;}
+.qkysel .selshow{ border:1px solid #eee; background: url(../images/selicon.png) no-repeat 96% center #fff;}
+.qkysel .selshow.upsel{ background-image: url(../images/seliconup.png)}
+.qkysel .selshow.onlybt{border:none; border-bottom:1px solid #eee;}
+.qkysel .selshow.inp{ background:#fff;}
+.qkysel .selshow.inp.hicon{ background:#fff;}
+.qkysel .selshow.inp.hicon .timeicon{ color:#06adb7;}
+.qkysel .selshow.inp.hicon .u_d{color:#06adb7;}
+.qkysel .selshow.inp.hicon .u_d i.noc{ color:#888;}
+.qkysel .selshow.inp input[type='text'],.qkysel .selshow.inp input[type='date']{color:#666; }
+.qkysel .optionbox{background:#fff; border:1px solid #eee;}
+.qkysel .optionbox a.option{color:#777; background:#fff; }
+.qkysel .optionbox a.option:hover{ background:#06adb7; color:#fff;}
+.qkysel .optionbox div.option a.twosel{  border-bottom:1px solid #eee;background: url(../images/selicon.png) no-repeat 98% center #fff;}
+.qkysel .optionbox2 a.option2:hover{background:#06adb7; color:#fff;}
+
+/*平行输入框和按颜色风格制定钮*/
+.qkyinp{background:#fcfcfc; border:1px solid #ececec;}
+.qkyinp .inptext input{color:#666;}
+.qkyinp .inpbut a{color:#666; }
+
+
+/*按钮颜色风格制定*/
+.qkybut{  border:1px  solid #06adb7; box-shadow:0 1px 3px #e1e1e1;}
+.qkybut.sigzi{ color:#666;}
+.qkybut.sigzi:hover,.qkybut.sigzi.cur{ color:#00bb9a; }
+.qkybut.hbg{background:#06adb7; color:#fff;}
+.qkybut.hbg:hover,.qkybut.hbg.cur{box-shadow:0 1px 4px #ddd; background:#0b8b93; border-color:#0b8b93;}
+.qkybut.fhbg{background:#a9e444; color:#fff;border-color:#a9e444;}
+.qkybut.fhbg:hover,.qkybut.hbg.cur{box-shadow:0 1px 4px #ddd; background:#8acb1a; border-color:#8acb1a;}
+.qkybut.zi{background:#7d3cb5; color:#fff;border-color:#7d3cb5;}
+.qkybut.zi:hover,.qkybut.hbg.cur{box-shadow:0 1px 4px #ddd; background:#681ea8; border-color:#681ea8;}
+
+.qkybut.lk{ border-color:#e6e6e6; background:#fff;color:#666; }
+.qkybut.lk.fan{border-color:#00bb9a; color:#00bb9a;}
+.qkybut.lk:hover,.qkybut.lk.cur{border-color:#00bb9a; color:#00bb9a;}
+.qkybut.lk.fan:hover,.qkybut.lk.fan.cur{ background:#00bb9a; color:#fff;}
+.qkybut.lk.bf90:hover,.qkybut.lkbf90.cur{border-color:#c3ebfd;}
+.qkybut.tline{border-top:1px  solid #f6f6f6;color:#00bb9a; background:#fafafa;}
+.qkybut.tline:hover{ color:#fff; background:#00bb9a;border-color:#00bb9a;}
+.qkybut.bline{ border-bottom:4px  solid #fff;color:#00bb9a; background:#fff;}
+.qkybut.bline:hover,.qkybut.bline.cur{background:#fff;border-color:#ffae00; color:#ffae00;}
+
+
+/*分页颜色风格制定*/
+.qkypage a{ border:1px solid #ddd;background:#fff; color:#666; }
+.qkypage a.cur,.qkypage a:hover{ background:#06adb7; color:#fff; border-color:#06adb7;}
+.qkypage a.no{ color:#aaa; border-color: #eee; background:#fff;}
+
+
+/*弹窗基础颜色风格制定*/
+.qky_maskbg{background: url(../images/bg100.png);}
+.qky_maskmian{background:#fff;}
+.qky_masktit{  color:#fff;background:#06adb7; border-bottom:1px  solid #06adb7;}
+.qky_masktit_b{ color:#FFF; background:#06adb7;}
+.qky_maskcont .sigtext{color:#06adb7; }
+.qky_maskbuts{ border-top:1px solid #f0f0f0; background:#fcfcfc;}
+.maskBut{color:#a9e444; }
+.maskBut.one{ border-right:1px  solid #f0f0f0;}
+
+
+/*自主复选框颜色风格制定*/
+.qkychbox{ background:#fff; border:1px solid #ccc;color:#fff;}
+.qkychbox i{color:#fff !important;}
+.qkychbox.cur{ background:#4cc3ca; border-color:#4cc3ca;}
+.qkychbox.type2.cur{ border-color:#4cc3ca; color:#4cc3ca; background:#fff;}
+
+
+/*文本框颜色风格制定*/
+.qkytextarea .ta_tit{ color:#666; }
+.qkytextarea textarea{ background:#fff; border:1px solid #eee; color:#a2a2a2;}
+.qkytextarea.p100 textarea{ color:#666;}
+.qkyh1{color:#666;}
+
+
+
+/*日历颜色风格制定*/
+.qky_calendar{background:#fff;box-shadow:0 2px 4px #c8c8c8; border:1px solid #eee;}
+.qky_calsel{color:#666;}
+.qky_calsel .calselshow{ border:1px solid #ececec; background: url(../images/selicon.png) no-repeat 96% center #fafafa;}
+.qky_calsel .calselshow.upsel{ background-image: url(../images/seliconup.png)}
+.qky_calsel .caloptionbox{background:#fff; border:1px solid #ececec;}
+.qky_calsel .caloptionbox a.option{ color:#777; background:#fff;}
+.qky_calsel .caloptionbox a.option:hover{ background:#06adb7; color:#fff;}
+.qky_calendar .showdate{ color:#06adb7;}
+.qky_cal_tab th{ background:#06adb7; color:#fff; box-shadow:0 2px 4px #c8c8c8;}
+.qky_cal_tab td{ color:#666; border-color:#f1f1f1;}
+.qky_cal_tab tr td:first-of-type{ border-left:1px solid #f1f1f1;}
+.qky_cal_tab td .today{ background:#ffdc1d;color:#fff;}
+.qky_cal_tab td .oldday{ background:#e6e6e6;}
+.qky_cal_tab td a[type='news']:hover,.qky_cal_tab td a.cur{ background:#06adb7;color:#fff;}
+
+
+/*交互导航颜色风格制定*/
+.qkynav{ background:#fff;}
+.qkynav label{ color:#00bb9a; border-bottom:1px solid #f1f1f1;}
+.qkynav ul li{color:#666; height:36px;}
+.qkynav ul li.cur{ color:#00bb9a;}
+
+/*伸头导航颜色风格制定*/
+.qkynav_zu a{background:#06adb7;color:#fff;}
+.qkynav_zu a:hover,.qkynav_zu a.cur{ background:#a9e444;}
+
+/*表格基础颜色风格制定*/
+.qkytable th{ background:#06adb7; color:#fff;  box-shadow:0 2px 4px #c8c8c8;}
+.qkytable tr.even td{ background:#fafafa;}
+.qkytable td{ color:#666;  border-color:#f1f1f1;}
+.qkytable td.one{ border-left:1px solid #f1f1f1;}
+.qkytable.type2 th{background:#88d7dc;}
+.qkytable.type2 tr.even td{ background:#f5f5f5;}
+.qkytable.type3 th{background:#ffedc6;box-shadow: none; color:#eda363;border-right:1px solid #ffe3a8; }
+.qkytable.type3 tr.uptit th{ background:#26747d; border-color:#26747d; color:#fff; }
+.qkytable.type3 td{border-color:#ffe3a8;}
+.qkytable.type3 tr.even td{ background:#fffcf4;}
+.qkytable.qian_color th{background:#82d6db;box-shadow:0 1px 4px #ffffff; }
+.qkytable.jskq_qian th{ background:#e6f7f8; color:#06adb7; box-shadow: none;}
+.qkytable.no_lrbr td{ border-left:none;border-right:none;}

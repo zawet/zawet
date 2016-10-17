@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>就餐管理—库存管理</title>
+<link href="css/clgl.css" rel="stylesheet" type="text/css"/>
+<!--框架css-->
+<link href="css/common_2.0.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkyui.css" rel="stylesheet" type="text/css"/>
+<link href="css/idangerous.swiper.css" rel="stylesheet">
+<!--
+<link rel="stylesheet/less" type="text/css" href="less/common.less" />
+<link rel="stylesheet/less" type="text/css" href="less/qkyframe.less" />
+<script src="bil/less.js" type="text/javascript"></script>-->
+
+<!--公共js-->
+<script src="bil/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="bil/jqui1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+</head>
+
+<body>
+<!--顶部-->
+<div class="qky_header">
+    <div class="header2">
+        <div class="qky_top_box clear3">
+            <div class="qky_logo"><img height="36" src="images/top/logo2.png"></div>
+            <div class="qky_top_search"><a href="#">全课云学校</a><a href="#">张三 教师</a><a href="#">安全退出</a><a href="#">设置</a></div>
+            <div class="qky_top_button"><a href="#" class="trn"><i class="qkyicon">&#xe600;</i>返回桌面</a></div>
+        </div>
+    </div>
+    <div class="header1">
+        <div class="qky_top_box clear3">
+            <ul class="qky_top_navs yc">
+            <li><a href="index.html" ><i class="jcicon">&#xe604;</i>菜单管理</a></li>
+            <li><a href="index_jctj.html"><i class="jcicon">&#xe605;</i>就餐统计</a></li>
+            <li><a href="index_kcgl.html" class="cur"><i class="jcicon">&#xe606;</i>库存管理</a></li>
+            </ul>
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe69c;</i>帮助</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon ">&#xe61d;</i>全课云APP</div>
+            <div class="qky_tab fr w_co"><i class="qkyicon fz_4">&#xe616;</i></div>
+        </div>
+    </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+    <div class="qky_main ">
+    	<div class="qkynav_zu clear3">
+        <a class="trn" href="index.html"><i class="jcicon">&#xe604;</i>菜单管理</a>
+        <a class="trn" href="index_jctj.html"><i class="jcicon">&#xe605;</i>就餐统计</a>
+        <a class="trn cur" href="index_kcgl.html"><i class="jcicon">&#xe606;</i>库存管理</a>
+        </div>
+        
+		<div class="jcgl_navs clear3">
+            <div class="qkyinp fl  XL">
+                <div class="fl inpbut"><a><i class="jcicon">&#xe618;</i></a></div>
+                <div class="fl inptext "><input type="text" placeholder="请输入原料编号或原料类别或原料名称"></div>
+                <div class="clear"></div>
+            </div>
+            <a class="qkybut lk fan fr mr16 " onClick="popIn('#ylxh')"><i class="jcicon mr6">&#xe61b;</i>原料消耗</a>
+            <a class="qkybut lk fan fr mr16 " onClick="popIn('#ylcg')"><i class="jcicon mr6">&#xe61a;</i>原料采购</a>
+            <a class="qkybut lk fan fr mr16 " href="index_kcgl_ylgl.html"><i class="jcicon mr6">&#xe600;</i>原料管理</a>
+            <a class="qkybut lk fan fr mr16 " onClick="popIn('#bdbox')"><i class="jcicon mr6">&#xe619;</i>表单查询下载</a>
+        </div>
+        
+        <div class="jcgl_main mt6">
+        	<div class="pa_lr16">
+                <table cellpadding="0" cellspacing="0" border="0" class="qkytable mt16 type2">
+                    <tr><th>原料编号</th><th>原料类别</th><th>原料名称</th><th>单位</th><th>当前数目</th><th>警戒线</th><th>需要采购量</th></tr>
+                    <tr><td class="one">001</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr class="even"><td class="one">002</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr><td class="one">003</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr class="even"><td class="one">004</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr><td class="one">005</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr class="even"><td class="one">006</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr><td class="one">007</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr class="even"><td class="one">008</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr><td class="one">009</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr class="even"><td class="one">010</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr><td class="one">011</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                    <tr class="even"><td class="one">012</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td></tr>
+                </table>
+                <div class="qkypage mt16">
+                    <a href="#" class="no">上一页</a>
+                    <a href="#" class="cur">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    ...
+                    <a href="#">12</a>
+                    <a href="#">下一页</a>
+           		</div>
+            </div>
+        </div>   
+    </div>
+</div>
+
+<!--底部-->
+<div class="qky_footer">
+<div>广东全通教育股份有限公司  版权所有  ©2007-2015</div>
+</div>
+
+<!--弹窗---------------------------------->
+
+<!--表单列表-->
+<div class="qky_maskbox" id="bdbox">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XL">
+        <div class="qky_masktit">表单查询下载<a class="maskclose" onClick="popOut('#bdbox')"><i class="jcicon">&#xe609;</i></a></div>
+        <div class="qky_maskcont pa_lr16 Pt16">
+        	<table cellpadding="0" cellspacing="0" border="0" class="qkytable mb16 type2 inmask">
+            <tr><th width="40%">表单名称</th><th>操 作</th></tr>
+            <tr><td>原料库存表</td><td><a class="qkybut hbg brad4 mr10" onClick="popIn('#ylkc_show')"><i class="jcicon mr6">&#xe618;</i>查看</a><a class="qkybut hbg brad4"><i class="jcicon mr6">&#xe61c;</i>下载</a></td></tr>
+            <tr><td>原料采购表</td><td><a class="qkybut hbg brad4 mr10" onClick="popIn('#ylcg_show')"><i class="jcicon mr6">&#xe618;</i>查看</a><a class="qkybut hbg brad4"><i class="jcicon mr6">&#xe61c;</i>下载</a></td></tr>
+            <tr><td>原料消耗表</td><td><a class="qkybut hbg brad4 mr10" onClick="popIn('#ylxh_show')"><i class="jcicon mr6">&#xe618;</i>查看</a><a class="qkybut hbg brad4"><i class="jcicon mr6">&#xe61c;</i>下载</a></td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!--原料库存单-->
+<div class="qky_maskbox" id="ylkc_show">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XXXL">
+        <div class="qky_masktit">原料库存单<a class="maskclose" onClick="popOut('#ylkc_show')"><i class="jcicon">&#xe609;</i></a></div>
+        <div class="qky_maskcont pa_lr16 Pt16">
+        	<div class="qkysel fl mb16 mr16">
+                <div class="seltxt fl">采购日期：</div>
+                <span class="fl" style="line-height:34px;">2016-06-01</span>
+                <div class="clear"></div>
+            </div>
+            <div class="qkysel fl mb16 ml16">
+                 <div class="seltxt fl">经办人：</div>
+                 <span class="fl" style="line-height:34px;">张索尼</span>
+                 <div class="clear"></div>
+            </div>
+            <table cellpadding="0" cellspacing="0" border="0" class="qkytable mb16 type2 inmask">
+            <tr><th>原料编号</th><th>原料类别</th><th>原料名称</th><th>单位</th><th>当前数目</th><th>标准库存</th><th>最低库存</th><th>最高库存</th></tr>                                            
+            <tr class="mask_tr"><td class="one">001</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td><td>8</td></tr>
+            <tr class="even"><td class="one">001</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td><td>8</td></tr>
+            <tr class="mask_tr"><td class="one">001</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td><td>8</td></tr>
+            <tr class="even"><td class="one">001</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td><td>8</td></tr>
+            <tr class="mask_tr"><td class="one">001</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td><td>8</td></tr>
+            <tr class="even"><td class="one">001</td><td>干调类</td><td>红烧酱汁</td><td>筒</td><td>4</td><td>4</td><td>2</td><td>8</td></tr>
+            </table>
+            <div class="clear"></div>
+            <div class="t_c mb26"><a class="qkybut hbg brad4 M" onClick="popOut('#ylkc_show')"><i class="jcicon mr6">&#xe609;</i>关闭</a></div>
+        </div>
+    </div>
+</div>
+
+<!--原料采购（查看）-->
+<div class="qky_maskbox" id="ylcg_show">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XXXL">
+        <div class="qky_masktit">原料采购单<a class="maskclose" onClick="popOut('#ylcg_show')"><i class="jcicon">&#xe609;</i></a></div>
+        <div class="qky_maskcont pa_lr16 Pt16">
+        	<div class="qkysel fl mb16 mr16">
+                <div class="seltxt fl">采购日期：</div>
+                <span class="fl" style="line-height:34px;">2016-06-01</span>
+                <div class="clear"></div>
+            </div>
+            <div class="qkysel fl mb16 ml16">
+                 <div class="seltxt fl">经办人：</div>
+                 <span class="fl" style="line-height:34px;">张索尼</span>
+                 <div class="clear"></div>
+            </div>
+            <table cellpadding="0" cellspacing="0" border="0" class="qkytable mb16 type2 inmask">
+            <tr><th>原料名称</th><th>原料数量</th><th>原料编号</th><th>原料类别</th><th>原料单位</th><th>标准库存</th><th>最低库存</th><th>最大库存</th></tr>
+            <tr class="mask_tr"><td class="one">红烧酱汁</td><td>10000</td><td>0213</td><td>干调类</td><td>筒</td><td>10000</td><td>100</td><td>20000</td></tr>
+            <tr class="even"><td class="one">红烧酱汁</td><td>10000</td><td>0213</td><td>干调类</td><td>筒</td><td>10000</td><td>100</td><td>20000</td></tr>
+            <tr class="mask_tr"><td class="one">红烧酱汁</td><td>10000</td><td>0213</td><td>干调类</td><td>筒</td><td>10000</td><td>100</td><td>20000</td></tr>
+            <tr class="even"><td class="one">红烧酱汁</td><td>10000</td><td>0213</td><td>干调类</td><td>筒</td><td>10000</td><td>100</td><td>20000</td></tr>
+            <tr class="mask_tr"><td class="one">红烧酱汁</td><td>10000</td><td>0213</td><td>干调类</td><td>筒</td><td>10000</td><td>100</td><td>20000</td></tr>
+            <tr class="even"><td class="one">红烧酱汁</td><td>10000</td><td>0213</td><td>干调类</td><td>筒</td><td>10000</td><td>100</td><td>20000</td></tr>
+            </table>
+            <div class="clear"></div>
+            <div class="t_c mb26"><a class="qkybut hbg brad4 M" onClick="popOut('#ylcg_show')"><i class="jcicon mr6">&#xe609;</i>关闭</a></div>
+        </div>
+    </div>
+</div>
+
+<!--原料消耗（查看）-->
+<div class="qky_maskbox" id="ylxh_show">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XXXL">
+        <div class="qky_masktit">原料消耗单<a class="maskclose" onClick="popOut('#ylxh_show')"><i class="jcicon">&#xe609;</i></a></div>
+        <div class="qky_maskcont pa_lr16 Pt16">
+        	<div class="qkysel fl mb16 mr16">
+                <div class="seltxt fl">采购日期：</div>
+                <span class="fl" style="line-height:34px;">2016-06-01</span>
+                <div class="clear"></div>
+            </div>
+            <div class="qkysel fl mb16 ml16">
+                 <div class="seltxt fl">经办人：</div>
+                 <span class="fl" style="line-height:34px;">张索尼</span>
+                 <div class="clear"></div>
+            </div>
+            <table cellpadding="0" cellspacing="0" border="0" class="qkytable mb16 type2 inmask">
+            <tr><th>原料编号</th><th>原料类别</th><th>原料名称</th><th>原料数量</th><th>原料单位</th></tr>
+            <tr class="mask_tr"><td class="one">001</td><td>干调类</td><td>红烧酱汁</td><td>3</td><td>筒</td></tr>
+            <tr class="even"><td class="one">002</td><td>干调类</td><td>红烧酱汁</td><td>3</td><td>筒</td></tr>
+            <tr class="mask_tr"><td class="one">003</td><td>干调类</td><td>红烧酱汁</td><td>3</td><td>筒</td></tr>
+            <tr class="even"><td class="one">004</td><td>干调类</td><td>红烧酱汁</td><td>3</td><td>筒</td></tr>
+            <tr class="mask_tr"><td class="one">005</td><td>干调类</td><td>红烧酱汁</td><td>3</td><td>筒</td></tr>
+            <tr class="even"><td class="one">006</td><td>干调类</td><td>红烧酱汁</td><td>3</td><td>筒</td></tr>
+            </table>
+            <div class="clear"></div>
+            <div class="t_c mb26"><a class="qkybut hbg brad4 M" onClick="popOut('#ylxh_show')"><i class="jcicon mr6">&#xe609;</i>关闭</a></div>
+        </div>
+    </div>
+</div>
+
+<!--原料采购（录入）-->
+<div class="qky_maskbox" id="ylcg">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XXXL">
+        <div class="qky_masktit">原料采购单<a class="maskclose" onClick="popOut('#ylcg')"><i class="jcicon">&#xe609;</i></a></div>
+        <div class="qky_maskcont pa_lr16 Pt16">
+        	<div class="qkysel fl mb16 mr16">
+                <div class="seltxt fl">采购日期：</div>
+                <div class="selshow fl L inp hicon"><input type="text"  class="caldate" id="etime"><a class="timeicon"><i class="jcicon">&#xe60d;</i></a>
+                <div class="qky_calendar"></div></div>
+                <div class="clear"></div>
+            </div>
+            <div class="qkysel fl mb16 ml16">
+                 <div class="seltxt fl">经办人：</div>
+                 <div class="selshow fl L inp"><input type="text" value=""></div>
+                 <div class="clear"></div>
+            </div>
+            <a class="qkybut hbg brad4 fr  M" onClick="popIn('#addyl')"><i class="qkyicon mr6">&#xe6b6;</i>新增原料</a>
+            <div class="clear"></div>
+            <table cellpadding="0" cellspacing="0" border="0" class="qkytable mb16 type2 inmask">
+            <tr><th>原料名称</th><th width="12%">原料数量</th><th>原料编号</th><th>原料类别</th><th>原料单位</th><th>标准库存</th><th>最低库存</th><th>最大库存</th></tr>
+            <tr class="mask_tr">
+            
+            <td class="one"><select class="mask_int"><option selected>原料选择</option><option  value="jy">酱油</option><option value="add">新增原料</option></select></td>
+            <td><input type="text" class="mask_int"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+            <tr class="add_hang even"><td colspan="8"><a class="addhang" ishuan="8" id="addylcg"> <i class="jcicon">&#xe60e;</i>点击添加新行</a></td></tr>                                                                             
+            </table>
+            
+            <div class="t_c mb26"><a class="qkybut hbg brad4 M mr16"><i class="jcicon mr6">&#xe614;</i>确定</a><a class="qkybut hbg brad4 M"><i class="jcicon mr6">&#xe609;</i>取消</a></div>
+        </div>
+    </div>
+</div>
+
+<!--原料消耗（录入）-->
+<div class="qky_maskbox" id="ylxh">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XXXL">
+        <div class="qky_masktit">原料消耗单<a class="maskclose" onClick="popOut('#ylxh')"><i class="jcicon">&#xe609;</i></a></div>
+        <div class="qky_maskcont pa_lr16 Pt16">
+        	<div class="qkysel fl mb16 mr16">
+                <div class="seltxt fl">采购日期：</div>
+                <div class="selshow fl L inp hicon"><input type="text"  class="caldate" id="etime"><a class="timeicon"><i class="jcicon">&#xe60d;</i></a>
+                <div class="qky_calendar"></div></div>
+                <div class="clear"></div>
+            </div>
+            <div class="qkysel fl mb16 ml16">
+                 <div class="seltxt fl">经办人：</div>
+                 <div class="selshow fl L inp"><input type="text" value=""></div>
+                 <div class="clear"></div>
+            </div>
+            <table cellpadding="0" cellspacing="0" border="0" class="qkytable mb16 type2 inmask">
+            <tr><th>原料名称</th><th width="12%">原料数量</th><th>原料编号</th><th>原料类别</th><th>原料单位</th></tr>
+            <tr class="mask_tr">
+            
+            <td class="one"><select class="mask_int"><option selected>原料选择</option><option>酱油</option></select></td>
+            <td><input type="text" class="mask_int"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            </tr>
+            <tr class="add_hang even"><td colspan="8"><a class="addhang" ishuan="5" id="addylxh"><i class="jcicon">&#xe60e;</i>点击添加新行</a></td></tr>                                                                             
+            </table>
+            <div class="clear"></div>
+            <div class="t_c mb26"><a class="qkybut hbg brad4 M mr16"><i class="jcicon mr6">&#xe614;</i>确定</a><a class="qkybut hbg brad4 M"><i class="jcicon mr6">&#xe609;</i>取消</a></div>
+        </div>
+    </div>
+</div>
+
+<!--新增原料-->
+<div class="qky_maskbox" id="addyl">
+    <div class="qky_maskbg"></div>
+    <div class="qky_maskmian XXXL">
+        <div class="qky_masktit">新增原料<a class="maskclose" onClick="popOut('#addyl')"><i class="jcicon">&#xe609;</i></a></div>
+        <div class="qky_maskcont pa_lr16 Pt16">
+        	
+            <table cellpadding="0" cellspacing="0" border="0" class="qkytable mb16 type2 inmask">
+            <tr><th>原料名称</th><th width="12%">原料数量</th><th>原料编号</th><th>原料类别</th><th>原料单位</th><th>标准库存</th><th>最低库存</th><th>最大库存</th></tr>
+            <tr class="mask_tr">
+            <td class="one"><input type="text" class="mask_int"></td>
+            <td><input type="text" class="mask_int"></td>
+            <td><input type="text" class="mask_int"></td>
+            <td><input type="text" class="mask_int"></td>
+            <td><input type="text" class="mask_int"></td>
+            <td><input type="text" class="mask_int"></td>
+            <td><input type="text" class="mask_int"></td>
+            <td><input type="text" class="mask_int"></td>
+            </tr></table> 
+            <div class="t_c mb26">
+                <a class="qkybut hbg brad4 M mr16" onClick="popOut('#addyl')"><i class="jcicon mr6">&#xe614;</i>确定</a>
+                <a class="qkybut hbg brad4 M" onClick="popOut('#addyl')"><i class="jcicon mr6">&#xe609;</i>取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script language="JavaScript" charset="utf-8" src="js/qky_ui.js"></script>
+<script language="JavaScript" charset="utf-8" src="js/user_public.js"></script>
+<script>
+var selxhhtml='<option selected>原料选择</option><option>酱油</option><option>番茄酱</option>';
+var selcghtml='<option selected>原料选择</option><option>酱油</option><option value="add">新增原料</option>';
+
+$(function() {
+	calendar(".timeicon",".qky_calendar");//日历启动 点击的元素，容器元
+	qkychbox_sigle();
+	qkyu_d();
+	addhang("#addylxh",selxhhtml);
+	addhang("#addylcg",selcghtml);
+	sel_toadd();
+});
+
+//下拉选中添加原料选项后弹出添加原料窗口
+function sel_toadd(){
+	$("select.mask_int").each(function(i) {
+        $(this).change(function(){
+			if($(this).val()=="add"){ popIn('#addyl')};
+		});
+    });
+}
+
+//增加行
+function addhang(id,selhtml){
+        $(id).click(function(){
+			var tdhtml='';
+			var thishuan=$(this).attr("ishuan");
+			for(var i=0;i<thishuan;i++){
+				if(i==0) tdhtml='<td class="one"><select  class="mask_int">'+selhtml+'</select></td>';
+				else if(i==1) tdhtml+='<td><input type="text" class="mask_int"></td>';
+				else tdhtml+='<td></td>';
+			}
+			$(this).parents(".add_hang").before('<tr class="mask_tr">'+tdhtml+'</tr>');
+			sel_toadd();
+    });
+}
+
+
+</script>
+</body>
+</html>
